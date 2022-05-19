@@ -3,23 +3,21 @@ package pasajero.events;
 import co.com.sofka.domain.generic.DomainEvent;
 import generics.values.Itinerario;
 import generics.values.Nombre;
-import pasajero.entities.Asiento;
-import pasajero.values.Numero;
+import pasajero.values.NumeroAsiento;
 import pasajero.values.NumeroTicket;
-import vuelo.Vuelo;
 import vuelo.identities.IdVuelo;
 
 public class TargetaDeEmbarqueGenerada extends DomainEvent {
     private final Nombre nombre;
     private final NumeroTicket numeroTicket;
-    private final Numero numero;
+    private final NumeroAsiento numeroAsiento;
     private final IdVuelo idVuelo;
     private final Itinerario itinerario;
-    public TargetaDeEmbarqueGenerada(Nombre nombre, IdVuelo idvuelo, Itinerario itinerario, NumeroTicket numeroTicket, Numero asiento) {
+    public TargetaDeEmbarqueGenerada(Nombre nombre, IdVuelo idvuelo, Itinerario itinerario, NumeroTicket numeroTicket, NumeroAsiento asiento) {
         super("TargetaDeEmbarqueGenerada");
         this.nombre=nombre;
         this.numeroTicket=numeroTicket;
-        this.numero =asiento;
+        this.numeroAsiento =asiento;
         this.idVuelo=idvuelo;
         this.itinerario=itinerario;
 
@@ -41,7 +39,7 @@ public class TargetaDeEmbarqueGenerada extends DomainEvent {
         return numeroTicket;
     }
 
-    public Numero getNumero() {
-        return numero;
+    public NumeroAsiento getNumero() {
+        return numeroAsiento;
     }
 }

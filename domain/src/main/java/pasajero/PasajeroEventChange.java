@@ -5,7 +5,6 @@ import pasajero.entities.Asiento;
 import pasajero.entities.Reservacion;
 import pasajero.events.*;
 import pasajero.values.Check;
-import pasajero.values.Numero;
 import pasajero.values.TargetaDeEmbarque;
 
 public class PasajeroEventChange extends EventChange {

@@ -2,10 +2,10 @@ package pasajero.values;
 
 import co.com.sofka.domain.generic.ValueObject;
 
-public class Numero implements ValueObject<Integer> {
+public class NumeroAsiento implements ValueObject<Integer> {
     private Integer valor;
 
-    public Numero(Integer valor) {
+    public NumeroAsiento(Integer valor) {
         this.valor = valor;
     }
 

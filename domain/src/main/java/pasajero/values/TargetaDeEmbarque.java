@@ -10,9 +10,9 @@ public class TargetaDeEmbarque implements ValueObject<TargetaDeEmbarque.Pros> {
     private IdVuelo idVuelo;
     private Itinerario itinerario;
     private NumeroTicket numeroTicket;
-    private Numero numeroAsiento;
+    private NumeroAsiento numeroAsiento;
 
-    public TargetaDeEmbarque(Nombre nombrePasajero, IdVuelo idVuelo, Itinerario itinerario, NumeroTicket numeroTicket, Numero numeroAsiento) {
+    public TargetaDeEmbarque(Nombre nombrePasajero, IdVuelo idVuelo, Itinerario itinerario, NumeroTicket numeroTicket, NumeroAsiento numeroAsiento) {
         this.nombrePasajero = nombrePasajero;
         this.idVuelo = idVuelo;
         this.itinerario = itinerario;
@@ -44,7 +44,7 @@ public class TargetaDeEmbarque implements ValueObject<TargetaDeEmbarque.Pros> {
             }
 
             @Override
-            public Numero numeroAsiento() {
+            public NumeroAsiento numeroAsiento() {
                 return numeroAsiento;
             }
         };
@@ -56,6 +56,6 @@ public class TargetaDeEmbarque implements ValueObject<TargetaDeEmbarque.Pros> {
         IdVuelo IdVuelo();
         Itinerario itinerario();
         NumeroTicket numeroTicket();
-        Numero numeroAsiento();
+        NumeroAsiento numeroAsiento();
     }
 }

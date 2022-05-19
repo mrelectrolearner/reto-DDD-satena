@@ -2,20 +2,20 @@ package pasajero.events;
 
 import co.com.sofka.domain.generic.DomainEvent;
 import pasajero.identities.IdAsiento;
-import pasajero.values.Numero;
+import pasajero.values.NumeroAsiento;
 
 public class AsientoCambiado extends DomainEvent {
-    private final Numero numeroAsientoNuevo;
+    private final NumeroAsiento numeroAsientoAsientoNuevo;
     private final IdAsiento idAsiento;
-    public AsientoCambiado(Numero nuevoAsiento, IdAsiento idAsiento) {
+    public AsientoCambiado(NumeroAsiento nuevoAsiento, IdAsiento idAsiento) {
         super("AsientoCambiado");
-        this.numeroAsientoNuevo =nuevoAsiento;
+        this.numeroAsientoAsientoNuevo =nuevoAsiento;
 
         this.idAsiento = idAsiento;
     }
 
-    public Numero getNumeroAsientoNuevo() {
-        return numeroAsientoNuevo;
+    public NumeroAsiento getNumeroAsientoNuevo() {
+        return numeroAsientoAsientoNuevo;
     }
 
     public IdAsiento getIdAsiento() {

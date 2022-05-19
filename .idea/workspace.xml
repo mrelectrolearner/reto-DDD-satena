@@ -4,7 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="9a400ce3-671a-4b6e-83e0-2c3b85deec72" name="Changes" comment="ADD: se crean los eventos y comportamientos para Pasajero.">
+    <list default="true" id="9a400ce3-671a-4b6e-83e0-2c3b85deec72" name="Changes" comment="fix Pasajero: se cambiaron los eventos, el Pasajero y PasajeroEventChange para no utilizar entidades en los eventos.">
+      <change afterPath="$PROJECT_DIR$/domain/src/main/java/generics/values/Correo.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/domain/src/main/java/generics/values/Llegada.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/domain/src/main/java/generics/values/Salida.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/domain/src/main/java/generics/values/Itinerario.java" beforeDir="false" afterPath="$PROJECT_DIR$/domain/src/main/java/generics/values/Itinerario.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/domain/src/main/java/generics/values/Telefono.java" beforeDir="false" afterPath="$PROJECT_DIR$/domain/src/main/java/generics/values/Telefono.java" afterDir="false" />
@@ -54,8 +57,8 @@
 }</component>
   <component name="RecentsManager">
     <key name="CreateClassDialog.RecentsKey">
-      <recent name="pasajero.events" />
       <recent name="generics.values" />
+      <recent name="pasajero.events" />
       <recent name="pasajero.values" />
       <recent name="pasajero.entities" />
       <recent name="tripulacion.identities" />
@@ -88,7 +91,14 @@
       <option name="project" value="LOCAL" />
       <updated>1652990389270</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="fix Pasajero: se cambiaron los eventos, el Pasajero y PasajeroEventChange para no utilizar entidades en los eventos.">
+      <created>1653000537805</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1653000537805</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -105,6 +115,7 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="ADD: se crean los agregados Pasajero, Vuelo y Tripulacion, con sus respectivas entidades, objetos de valor e identificadores." />
     <MESSAGE value="ADD: se crean los eventos y comportamientos para Pasajero." />
-    <option name="LAST_COMMIT_MESSAGE" value="ADD: se crean los eventos y comportamientos para Pasajero." />
+    <MESSAGE value="fix Pasajero: se cambiaron los eventos, el Pasajero y PasajeroEventChange para no utilizar entidades en los eventos." />
+    <option name="LAST_COMMIT_MESSAGE" value="fix Pasajero: se cambiaron los eventos, el Pasajero y PasajeroEventChange para no utilizar entidades en los eventos." />
   </component>
 </project>
