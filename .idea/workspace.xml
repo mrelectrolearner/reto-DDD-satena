@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="9a400ce3-671a-4b6e-83e0-2c3b85deec72" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/dbnavigator.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/domain/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/domain/src/main/java/generics/values/DatosPersonales.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/domain/src/main/java/generics/values/Destino.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/domain/src/main/java/generics/values/Fecha.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/domain/src/main/java/generics/values/Itinerario.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/domain/src/main/java/generics/values/Nombre.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/domain/src/main/java/generics/values/Origen.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/domain/src/main/java/pasajero/Pasajero.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/domain/src/main/java/pasajero/entities/Asiento.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/domain/src/main/java/pasajero/entities/Equipaje.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/domain/src/main/java/pasajero/entities/Reservacion.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/domain/src/main/java/pasajero/identities/IdAsiento.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/domain/src/main/java/pasajero/identities/IdEquipaje.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/domain/src/main/java/pasajero/identities/IdPasajero.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/domain/src/main/java/pasajero/identities/IdReserva.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/domain/src/main/java/pasajero/values/Check.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/domain/src/main/java/pasajero/values/Descripcion.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/domain/src/main/java/pasajero/values/EstadoAsiento.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/domain/src/main/java/pasajero/values/EstadoReserva.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/domain/src/main/java/pasajero/values/Numero.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/domain/src/main/java/pasajero/values/NumeroTicket.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/domain/src/main/java/pasajero/values/Peso.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/domain/src/main/java/pasajero/values/TargetaDeEmbarque.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/domain/src/main/java/pasajero/values/Tarifa.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/domain/src/main/java/pasajero/values/Tipo.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/domain/src/main/java/pasajero/values/Volumen.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/domain/src/main/java/tripulacion/Tripulacion.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/domain/src/main/java/tripulacion/entities/Copiloto.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/domain/src/main/java/tripulacion/entities/Piloto.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/domain/src/main/java/tripulacion/entities/Sobrecargo.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/domain/src/main/java/tripulacion/identities/IdCopiloto.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/domain/src/main/java/tripulacion/identities/IdPiloto.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/domain/src/main/java/tripulacion/identities/IdSobrecargo.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/domain/src/main/java/tripulacion/identities/IdTripulacion.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/domain/src/main/java/tripulacion/values/CalendarioVuelo.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/domain/src/main/java/tripulacion/values/Disponibilidad.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/domain/src/main/java/vuelo/Vuelo.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/domain/src/main/java/vuelo/entities/Avion.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/domain/src/main/java/vuelo/entities/Ruta.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/domain/src/main/java/vuelo/identities/IdAvion.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/domain/src/main/java/vuelo/identities/IdRuta.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/domain/src/main/java/vuelo/identities/IdVuelo.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/domain/src/main/java/vuelo/values/Capacidad.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/domain/src/main/java/vuelo/values/Modelo.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/domain/src/main/java/vuelo/values/Ubicacion.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
+  <component name="ProjectId" id="29MYUWfFg7svcphctoKlQ6krjQU" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;jdk.selected.JAVA_MODULE&quot;: &quot;17&quot;
+  }
+}</component>
+  <component name="RecentsManager">
+    <key name="CreateClassDialog.RecentsKey">
+      <recent name="generics.values" />
+      <recent name="pasajero.values" />
+      <recent name="pasajero.entities" />
+      <recent name="tripulacion.identities" />
+      <recent name="tripulacion.values" />
+    </key>
+    <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
+      <recent name="generics.values" />
+      <recent name="pasajero" />
+    </key>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="9a400ce3-671a-4b6e-83e0-2c3b85deec72" name="Changes" comment="" />
+      <created>1652924438000</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1652924438000</updated>
+    </task>
+    <servers />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+</project>
