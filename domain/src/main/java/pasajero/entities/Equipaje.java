@@ -10,6 +10,14 @@ public class Equipaje extends Entity<IdEquipaje> {
     private Tipo tipo;
     private Descripcion descripcion;
 
+    public Equipaje(IdEquipaje entityId, Peso peso, Volumen volumen, Tipo tipo, Descripcion descripcion) {
+        super(entityId);
+        this.peso = peso;
+        this.volumen = volumen;
+        this.tipo = tipo;
+        this.descripcion = descripcion;
+    }
+
     public Equipaje(IdEquipaje entityId) {
         super(entityId);
     }

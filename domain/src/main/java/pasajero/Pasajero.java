@@ -9,6 +9,7 @@ import pasajero.entities.Equipaje;
 import pasajero.entities.Reservacion;
 import pasajero.events.*;
 import pasajero.identities.IdAsiento;
+import pasajero.identities.IdEquipaje;
 import pasajero.identities.IdPasajero;
 import pasajero.identities.IdReserva;
 import pasajero.values.*;
@@ -47,15 +48,18 @@ public class Pasajero extends AggregateEvent<IdPasajero> {
         appendChange(new ItinerarioCambiado(itinerarioNuevo)).apply();
     }
 
-    public void checkIn(Peso peso, Volumen volumen, Tipo tipo, Descripcion descripcion, NumeroAsiento numeroAsiento, IdAsiento idAsiento){
-        appendChange(new Checked( peso, volumen, tipo, descripcion,numeroAsiento, idAsiento)).apply();
+    public void checkIn(IdEquipaje idEquipaje, Peso peso, Volumen volumen, Tipo tipo,
+                        Descripcion descripcion, NumeroAsiento numeroAsiento, IdAsiento idAsiento)
+    {
+        appendChange(new Checked( idEquipaje,peso, volumen, tipo, descripcion,numeroAsiento, idAsiento)).apply();
     }
 
     public void generarTargetaDeEmbarque(IdVuelo idVuelo){
         Nombre nombre=datosPersonales.value().nombre();
         Itinerario itinerario=this.reservacion.itinerario();
         NumeroAsiento numeroAsiento=this.asiento.getNumero();
-        appendChange(new TargetaDeEmbarqueGenerada(nombre, idVuelo,itinerario,numeroTicket,numeroAsiento)).apply();
+        appendChange(new TargetaDeEmbarqueGenerada(nombre, idVuelo,
+                itinerario,numeroTicket,numeroAsiento)).apply();
 
     }
 

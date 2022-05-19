@@ -2,10 +2,10 @@ package pasajero;
 
 import co.com.sofka.domain.generic.EventChange;
 import pasajero.entities.Asiento;
+import pasajero.entities.Equipaje;
 import pasajero.entities.Reservacion;
 import pasajero.events.*;
-import pasajero.values.Check;
-import pasajero.values.TargetaDeEmbarque;
+import pasajero.values.*;
 
 public class PasajeroEventChange extends EventChange {
     public PasajeroEventChange(Pasajero pasajero) {
@@ -13,16 +13,20 @@ public class PasajeroEventChange extends EventChange {
         apply((AsientoCambiado event)->{
             var numeroAsiento=event.getNumeroAsientoNuevo();
             var idAsiento=event.getIdAsiento();
-            Asiento asiento =new Asiento(idAsiento,numeroAsiento);
-            pasajero.asiento=asiento;
+            pasajero.asiento=new Asiento(idAsiento,numeroAsiento);
 
         });
 
         apply((Checked event)->{
             var numeroAsiento=event.getNumeroAsiento();
-            Asiento asiento =new Asiento(event.getIdAsiento(),numeroAsiento);
-            pasajero.equipaje=event.getEquipaje();
-            pasajero.asiento=asiento;
+            var peso=event.getPeso();
+            var volumen=event.getVolumen();
+            var descripcion =event.getDescripcion();
+            var tipo=event.getTipo();
+            var idEquipaje=event.getIdEquipaje();
+
+            pasajero.equipaje=new Equipaje(idEquipaje,peso, volumen, tipo,descripcion);
+            pasajero.asiento=new Asiento(event.getIdAsiento(),numeroAsiento);;
             pasajero.check=new Check(true);
         });
         apply((ItinerarioCambiado event)->{
