@@ -3,6 +3,7 @@ package pasajero.values;
 import co.com.sofka.domain.generic.ValueObject;
 import generics.values.Itinerario;
 import generics.values.Nombre;
+import pasajero.entities.Asiento;
 import vuelo.Vuelo;
 
 public class TargetaDeEmbarque implements ValueObject<TargetaDeEmbarque.Pros> {
@@ -10,6 +11,15 @@ public class TargetaDeEmbarque implements ValueObject<TargetaDeEmbarque.Pros> {
     private Vuelo vuelo;
     private Itinerario itinerario;
     private NumeroTicket numeroTicket;
+    private Asiento asiento;
+
+    public TargetaDeEmbarque(Nombre nombrePasajero, Vuelo vuelo, Itinerario itinerario, NumeroTicket numeroTicket,Asiento asiento) {
+        this.nombrePasajero = nombrePasajero;
+        this.vuelo = vuelo;
+        this.itinerario = itinerario;
+        this.numeroTicket = numeroTicket;
+        this.asiento=asiento;
+    }
 
     @Override
     public Pros value() {
@@ -33,6 +43,11 @@ public class TargetaDeEmbarque implements ValueObject<TargetaDeEmbarque.Pros> {
             public NumeroTicket numeroTicket() {
                 return numeroTicket;
             }
+
+            @Override
+            public Asiento asiento() {
+                return asiento;
+            }
         };
     }
 
@@ -42,5 +57,6 @@ public class TargetaDeEmbarque implements ValueObject<TargetaDeEmbarque.Pros> {
         Vuelo vuelo();
         Itinerario itinerario();
         NumeroTicket numeroTicket();
+        Asiento asiento();
     }
 }

@@ -4,11 +4,11 @@ import co.com.sofka.domain.generic.DomainEvent;
 import pasajero.entities.Asiento;
 import pasajero.entities.Equipaje;
 
-public class Ckecked extends DomainEvent {
+public class Checked extends DomainEvent {
     private final Equipaje equipaje;
     private final Asiento asiento;
-    public Ckecked(Equipaje equipaje, Asiento asiento) {
-        super("Ckecked");
+    public Checked(Equipaje equipaje, Asiento asiento) {
+        super("Checked");
         this.equipaje=equipaje;
         this.asiento=asiento;
     }
