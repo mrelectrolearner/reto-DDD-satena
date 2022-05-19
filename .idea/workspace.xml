@@ -6,24 +6,20 @@
   <component name="ChangeListManager">
     <list default="true" id="9a400ce3-671a-4b6e-83e0-2c3b85deec72" name="Changes" comment="ADD: se crean los eventos y comportamientos para Pasajero.">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/domain/src/main/java/generics/values/Itinerario.java" beforeDir="false" afterPath="$PROJECT_DIR$/domain/src/main/java/generics/values/Itinerario.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/domain/src/main/java/generics/values/Telefono.java" beforeDir="false" afterPath="$PROJECT_DIR$/domain/src/main/java/generics/values/Telefono.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/domain/src/main/java/pasajero/Pasajero.java" beforeDir="false" afterPath="$PROJECT_DIR$/domain/src/main/java/pasajero/Pasajero.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/domain/src/main/java/pasajero/PasajeroEventChange.java" beforeDir="false" afterPath="$PROJECT_DIR$/domain/src/main/java/pasajero/PasajeroEventChange.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/domain/src/main/java/pasajero/entities/Reservacion.java" beforeDir="false" afterPath="$PROJECT_DIR$/domain/src/main/java/pasajero/entities/Reservacion.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/domain/src/main/java/pasajero/entities/Asiento.java" beforeDir="false" afterPath="$PROJECT_DIR$/domain/src/main/java/pasajero/entities/Asiento.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/domain/src/main/java/pasajero/events/AsientoCambiado.java" beforeDir="false" afterPath="$PROJECT_DIR$/domain/src/main/java/pasajero/events/AsientoCambiado.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/domain/src/main/java/pasajero/events/Ckecked.java" beforeDir="false" afterPath="$PROJECT_DIR$/domain/src/main/java/pasajero/events/Checked.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/domain/src/main/java/pasajero/events/Checked.java" beforeDir="false" afterPath="$PROJECT_DIR$/domain/src/main/java/pasajero/events/Checked.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/domain/src/main/java/pasajero/events/ItinerarioCambiado.java" beforeDir="false" afterPath="$PROJECT_DIR$/domain/src/main/java/pasajero/events/ItinerarioCambiado.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/domain/src/main/java/pasajero/events/ItinerarioEliminado.java" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/domain/src/main/java/pasajero/events/TargetaDeEmbarqueGenerada.java" beforeDir="false" afterPath="$PROJECT_DIR$/domain/src/main/java/pasajero/events/TargetaDeEmbarqueGenerada.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/domain/src/main/java/pasajero/events/VueloReservado.java" beforeDir="false" afterPath="$PROJECT_DIR$/domain/src/main/java/pasajero/events/VueloReservado.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/domain/src/main/java/pasajero/values/Check.java" beforeDir="false" afterPath="$PROJECT_DIR$/domain/src/main/java/pasajero/values/Check.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/domain/src/main/java/pasajero/values/Descripcion.java" beforeDir="false" afterPath="$PROJECT_DIR$/domain/src/main/java/pasajero/values/Descripcion.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/domain/src/main/java/pasajero/values/EstadoAsiento.java" beforeDir="false" afterPath="$PROJECT_DIR$/domain/src/main/java/pasajero/values/EstadoAsiento.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/domain/src/main/java/pasajero/values/EstadoReserva.java" beforeDir="false" afterPath="$PROJECT_DIR$/domain/src/main/java/pasajero/values/EstadoReserva.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/domain/src/main/java/pasajero/values/Numero.java" beforeDir="false" afterPath="$PROJECT_DIR$/domain/src/main/java/pasajero/values/Numero.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/domain/src/main/java/pasajero/values/NumeroTicket.java" beforeDir="false" afterPath="$PROJECT_DIR$/domain/src/main/java/pasajero/values/NumeroTicket.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/domain/src/main/java/pasajero/values/Peso.java" beforeDir="false" afterPath="$PROJECT_DIR$/domain/src/main/java/pasajero/values/Peso.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/domain/src/main/java/pasajero/identities/IdAsiento.java" beforeDir="false" afterPath="$PROJECT_DIR$/domain/src/main/java/pasajero/identities/IdAsiento.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/domain/src/main/java/pasajero/identities/IdPasajero.java" beforeDir="false" afterPath="$PROJECT_DIR$/domain/src/main/java/pasajero/identities/IdPasajero.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/domain/src/main/java/pasajero/values/TargetaDeEmbarque.java" beforeDir="false" afterPath="$PROJECT_DIR$/domain/src/main/java/pasajero/values/TargetaDeEmbarque.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/domain/src/main/java/pasajero/values/Tarifa.java" beforeDir="false" afterPath="$PROJECT_DIR$/domain/src/main/java/pasajero/values/Tarifa.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/domain/src/main/java/pasajero/values/Tipo.java" beforeDir="false" afterPath="$PROJECT_DIR$/domain/src/main/java/pasajero/values/Tipo.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/domain/src/main/java/pasajero/values/Volumen.java" beforeDir="false" afterPath="$PROJECT_DIR$/domain/src/main/java/pasajero/values/Volumen.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/domain/src/main/java/vuelo/Vuelo.java" beforeDir="false" afterPath="$PROJECT_DIR$/domain/src/main/java/vuelo/Vuelo.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />

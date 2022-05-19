@@ -10,6 +10,15 @@ public class Itinerario implements ValueObject<Itinerario.Pros> {
     private Destino destino;
     private Llegada llegada;
 
+    public Itinerario(String codigoVuelo, Fecha fecha, Salida salida, Origen origen, Destino destino, Llegada llegada) {
+        this.codigoVuelo = codigoVuelo;
+        this.fecha = fecha;
+        this.salida = salida;
+        this.origen = origen;
+        this.destino = destino;
+        this.llegada = llegada;
+    }
+
     @Override
     public Pros value() {
         return new Pros() {

@@ -9,7 +9,17 @@ public class Asiento extends Entity<IdAsiento> {
     protected Numero numero;
     protected EstadoAsiento estado;
 
-    public Asiento(IdAsiento entityId) {
+    public Asiento(IdAsiento entityId, Numero numero) {
         super(entityId);
+        this.numero=numero;
+        this.estado=new EstadoAsiento(EstadoAsiento.Estado.DISPONIBLE);
+    }
+
+    public Numero getNumero() {
+        return numero;
+    }
+
+    public EstadoAsiento getEstado() {
+        return estado;
     }
 }

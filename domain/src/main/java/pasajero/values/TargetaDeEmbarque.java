@@ -3,22 +3,21 @@ package pasajero.values;
 import co.com.sofka.domain.generic.ValueObject;
 import generics.values.Itinerario;
 import generics.values.Nombre;
-import pasajero.entities.Asiento;
-import vuelo.Vuelo;
+import vuelo.identities.IdVuelo;
 
 public class TargetaDeEmbarque implements ValueObject<TargetaDeEmbarque.Pros> {
     private Nombre nombrePasajero;
-    private Vuelo vuelo;
+    private IdVuelo idVuelo;
     private Itinerario itinerario;
     private NumeroTicket numeroTicket;
-    private Asiento asiento;
+    private Numero numeroAsiento;
 
-    public TargetaDeEmbarque(Nombre nombrePasajero, Vuelo vuelo, Itinerario itinerario, NumeroTicket numeroTicket,Asiento asiento) {
+    public TargetaDeEmbarque(Nombre nombrePasajero, IdVuelo idVuelo, Itinerario itinerario, NumeroTicket numeroTicket, Numero numeroAsiento) {
         this.nombrePasajero = nombrePasajero;
-        this.vuelo = vuelo;
+        this.idVuelo = idVuelo;
         this.itinerario = itinerario;
         this.numeroTicket = numeroTicket;
-        this.asiento=asiento;
+        this.numeroAsiento = numeroAsiento;
     }
 
     @Override
@@ -30,8 +29,8 @@ public class TargetaDeEmbarque implements ValueObject<TargetaDeEmbarque.Pros> {
             }
 
             @Override
-            public Vuelo vuelo() {
-                return vuelo;
+            public IdVuelo IdVuelo() {
+                return idVuelo;
             }
 
             @Override
@@ -45,8 +44,8 @@ public class TargetaDeEmbarque implements ValueObject<TargetaDeEmbarque.Pros> {
             }
 
             @Override
-            public Asiento asiento() {
-                return asiento;
+            public Numero numeroAsiento() {
+                return numeroAsiento;
             }
         };
     }
@@ -54,9 +53,9 @@ public class TargetaDeEmbarque implements ValueObject<TargetaDeEmbarque.Pros> {
 
     public interface Pros {
         Nombre nombre();
-        Vuelo vuelo();
+        IdVuelo IdVuelo();
         Itinerario itinerario();
         NumeroTicket numeroTicket();
-        Asiento asiento();
+        Numero numeroAsiento();
     }
 }

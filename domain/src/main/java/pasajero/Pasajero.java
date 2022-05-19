@@ -8,14 +8,12 @@ import pasajero.entities.Asiento;
 import pasajero.entities.Equipaje;
 import pasajero.entities.Reservacion;
 import pasajero.events.*;
+import pasajero.identities.IdAsiento;
 import pasajero.identities.IdPasajero;
 import pasajero.identities.IdReserva;
-import pasajero.values.Check;
+import pasajero.values.*;
 import generics.values.DatosPersonales;
-import pasajero.values.NumeroTicket;
-import pasajero.values.TargetaDeEmbarque;
-import pasajero.values.Tarifa;
-import vuelo.Vuelo;
+import vuelo.identities.IdVuelo;
 
 import java.util.List;
 
@@ -44,25 +42,20 @@ public class Pasajero extends AggregateEvent<IdPasajero> {
         return pasajero;
     }
 
-    public void AgregarItinerario(Itinerario itinerario){
-        appendChange(new ItinerarioAgregado(itinerario)).apply();
+
+    public void cambiarItinerario(Itinerario itinerarioNuevo){
+        appendChange(new ItinerarioCambiado(itinerarioNuevo)).apply();
     }
 
-    public void eliminarItinerario(Itinerario itinerario){
-        appendChange(new ItinerarioEliminado(itinerario)).apply();
+    public void checkIn(Equipaje equipaje, Numero numeroAsiento, IdAsiento idAsiento){
+        appendChange(new Checked(equipaje,numeroAsiento, idAsiento)).apply();
     }
 
-    public void cambiarItinerario(Itinerario itinerarioActual,Itinerario itinerarioNuevo){
-        appendChange(new ItinerarioCambiado(itinerarioActual,itinerarioNuevo)).apply();
-    }
-
-    public void checkIn(Equipaje equipaje, Asiento asiento){
-        appendChange(new Checked(equipaje,asiento)).apply();
-    }
-
-    public void generarTargetaDeEmbarque(Vuelo vuelo){
+    public void generarTargetaDeEmbarque(IdVuelo idVuelo){
         Nombre nombre=datosPersonales.value().nombre();
-        appendChange(new TargetaDeEmbarqueGenerada(nombre,vuelo,reservacion.itinerario(),numeroTicket,asiento)).apply();
+        Itinerario itinerario=this.reservacion.itinerario();
+        Numero numeroAsiento=this.asiento.getNumero();
+        appendChange(new TargetaDeEmbarqueGenerada(nombre, idVuelo,itinerario,numeroTicket,numeroAsiento)).apply();
 
     }
 
@@ -70,8 +63,8 @@ public class Pasajero extends AggregateEvent<IdPasajero> {
         appendChange(new VueloReservado(idReserva,itinerario,tarifa )).apply();
     }
 
-    public void cambiarAsiento(Asiento nuevoAsiento){
-        appendChange(new AsientoCambiado(nuevoAsiento)).apply();
+    public void cambiarAsiento(Numero numeroAsiento, IdAsiento idAsiento){
+        appendChange(new AsientoCambiado(numeroAsiento, idAsiento)).apply();
     }
 
     public TargetaDeEmbarque targetaDeEmbarque() {

@@ -4,21 +4,23 @@ import co.com.sofka.domain.generic.DomainEvent;
 import generics.values.Itinerario;
 import generics.values.Nombre;
 import pasajero.entities.Asiento;
+import pasajero.values.Numero;
 import pasajero.values.NumeroTicket;
 import vuelo.Vuelo;
+import vuelo.identities.IdVuelo;
 
 public class TargetaDeEmbarqueGenerada extends DomainEvent {
     private final Nombre nombre;
     private final NumeroTicket numeroTicket;
-    private final Asiento asiento;
-    private final Vuelo vuelo;
+    private final Numero numero;
+    private final IdVuelo idVuelo;
     private final Itinerario itinerario;
-    public TargetaDeEmbarqueGenerada(Nombre nombre, Vuelo vuelo, Itinerario itinerario, NumeroTicket numeroTicket, Asiento asiento) {
+    public TargetaDeEmbarqueGenerada(Nombre nombre, IdVuelo idvuelo, Itinerario itinerario, NumeroTicket numeroTicket, Numero asiento) {
         super("TargetaDeEmbarqueGenerada");
         this.nombre=nombre;
         this.numeroTicket=numeroTicket;
-        this.asiento=asiento;
-        this.vuelo=vuelo;
+        this.numero =asiento;
+        this.idVuelo=idvuelo;
         this.itinerario=itinerario;
 
     }
@@ -27,8 +29,8 @@ public class TargetaDeEmbarqueGenerada extends DomainEvent {
         return itinerario;
     }
 
-    public Vuelo getVuelo() {
-        return vuelo;
+    public IdVuelo getVuelo() {
+        return idVuelo;
     }
 
     public Nombre getNombre() {
@@ -39,7 +41,7 @@ public class TargetaDeEmbarqueGenerada extends DomainEvent {
         return numeroTicket;
     }
 
-    public Asiento getAsiento() {
-        return asiento;
+    public Numero getNumero() {
+        return numero;
     }
 }

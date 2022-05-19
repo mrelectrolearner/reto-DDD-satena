@@ -16,6 +16,7 @@ public class Vuelo extends AggregateEvent<IdVuelo> {
     protected Ruta ruta;
 
 
+
     public Vuelo(IdVuelo entityId) {
         super(entityId);
     }
