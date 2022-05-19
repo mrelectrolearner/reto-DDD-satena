@@ -2,9 +2,11 @@ package pasajero;
 
 import co.com.sofka.domain.generic.AggregateEvent;
 import generics.values.Itinerario;
+import generics.values.Nombre;
 import pasajero.entities.Asiento;
 import pasajero.entities.Equipaje;
 import pasajero.entities.Reservacion;
+import pasajero.events.*;
 import pasajero.identities.IdPasajero;
 import pasajero.values.Check;
 import generics.values.DatosPersonales;
@@ -44,11 +46,12 @@ public class Pasajero extends AggregateEvent<IdPasajero> {
     }
 
     public void checkIn(Equipaje equipaje, Asiento asiento){
-        appendChange(new ckecked(equipaje,asiento)).apply();
+        appendChange(new Ckecked(equipaje,asiento)).apply();
     }
 
     public void generarTargetaDeEmbarque(){
-        appendChange(new TargetaDeEmbarqueGenerada(datosPersonales.nombre(),numeroTicket,asiento)).apply();
+        Nombre nombre=datosPersonales.value().nombre();
+        appendChange(new TargetaDeEmbarqueGenerada(nombre,numeroTicket,asiento)).apply();
 
     }
 
@@ -59,5 +62,6 @@ public class Pasajero extends AggregateEvent<IdPasajero> {
     public void cambiarAsiento(Asiento nuevoAsiento){
         appendChange(new AsientoCambiado(this.asiento,nuevoAsiento)).apply();
     }
+
 
 }

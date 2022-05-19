@@ -4,58 +4,19 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="9a400ce3-671a-4b6e-83e0-2c3b85deec72" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/dbnavigator.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/domain/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/domain/src/main/java/generics/values/DatosPersonales.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/domain/src/main/java/generics/values/Destino.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/domain/src/main/java/generics/values/Fecha.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/domain/src/main/java/generics/values/Itinerario.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/domain/src/main/java/generics/values/Nombre.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/domain/src/main/java/generics/values/Origen.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/domain/src/main/java/pasajero/Pasajero.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/domain/src/main/java/pasajero/entities/Asiento.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/domain/src/main/java/pasajero/entities/Equipaje.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/domain/src/main/java/pasajero/entities/Reservacion.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/domain/src/main/java/pasajero/identities/IdAsiento.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/domain/src/main/java/pasajero/identities/IdEquipaje.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/domain/src/main/java/pasajero/identities/IdPasajero.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/domain/src/main/java/pasajero/identities/IdReserva.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/domain/src/main/java/pasajero/values/Check.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/domain/src/main/java/pasajero/values/Descripcion.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/domain/src/main/java/pasajero/values/EstadoAsiento.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/domain/src/main/java/pasajero/values/EstadoReserva.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/domain/src/main/java/pasajero/values/Numero.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/domain/src/main/java/pasajero/values/NumeroTicket.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/domain/src/main/java/pasajero/values/Peso.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/domain/src/main/java/pasajero/values/TargetaDeEmbarque.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/domain/src/main/java/pasajero/values/Tarifa.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/domain/src/main/java/pasajero/values/Tipo.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/domain/src/main/java/pasajero/values/Volumen.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/domain/src/main/java/tripulacion/Tripulacion.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/domain/src/main/java/tripulacion/entities/Copiloto.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/domain/src/main/java/tripulacion/entities/Piloto.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/domain/src/main/java/tripulacion/entities/Sobrecargo.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/domain/src/main/java/tripulacion/identities/IdCopiloto.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/domain/src/main/java/tripulacion/identities/IdPiloto.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/domain/src/main/java/tripulacion/identities/IdSobrecargo.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/domain/src/main/java/tripulacion/identities/IdTripulacion.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/domain/src/main/java/tripulacion/values/CalendarioVuelo.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/domain/src/main/java/tripulacion/values/Disponibilidad.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/domain/src/main/java/vuelo/Vuelo.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/domain/src/main/java/vuelo/entities/Avion.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/domain/src/main/java/vuelo/entities/Ruta.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/domain/src/main/java/vuelo/identities/IdAvion.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/domain/src/main/java/vuelo/identities/IdRuta.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/domain/src/main/java/vuelo/identities/IdVuelo.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/domain/src/main/java/vuelo/values/Capacidad.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/domain/src/main/java/vuelo/values/Modelo.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/domain/src/main/java/vuelo/values/Ubicacion.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+    <list default="true" id="9a400ce3-671a-4b6e-83e0-2c3b85deec72" name="Changes" comment="ADD: se crean los agregados Pasajero, Vuelo y Tripulacion, con sus respectivas entidades, objetos de valor e identificadores.">
+      <change afterPath="$PROJECT_DIR$/domain/src/main/java/pasajero/PasajeroEventChange.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/domain/src/main/java/pasajero/events/AsientoCambiado.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/domain/src/main/java/pasajero/events/Ckecked.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/domain/src/main/java/pasajero/events/ItinerarioAgregado.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/domain/src/main/java/pasajero/events/ItinerarioCambiado.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/domain/src/main/java/pasajero/events/ItinerarioEliminado.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/domain/src/main/java/pasajero/events/PasajeroCreado.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/domain/src/main/java/pasajero/events/TargetaDeEmbarqueGenerada.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/domain/src/main/java/pasajero/events/VueloReservado.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/domain/src/main/java/generics/values/DatosPersonales.java" beforeDir="false" afterPath="$PROJECT_DIR$/domain/src/main/java/generics/values/DatosPersonales.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/domain/src/main/java/pasajero/Pasajero.java" beforeDir="false" afterPath="$PROJECT_DIR$/domain/src/main/java/pasajero/Pasajero.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -90,11 +51,11 @@
 }</component>
   <component name="RecentsManager">
     <key name="CreateClassDialog.RecentsKey">
+      <recent name="pasajero.events" />
       <recent name="generics.values" />
       <recent name="pasajero.values" />
       <recent name="pasajero.entities" />
       <recent name="tripulacion.identities" />
-      <recent name="tripulacion.values" />
     </key>
     <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
       <recent name="generics.values" />
@@ -110,6 +71,14 @@
       <option name="presentableId" value="Default" />
       <updated>1652924438000</updated>
     </task>
+    <task id="LOCAL-00001" summary="ADD: se crean los agregados Pasajero, Vuelo y Tripulacion, con sus respectivas entidades, objetos de valor e identificadores.">
+      <created>1652988329584</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1652988329584</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -122,5 +91,9 @@
         </entry>
       </map>
     </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="ADD: se crean los agregados Pasajero, Vuelo y Tripulacion, con sus respectivas entidades, objetos de valor e identificadores." />
+    <option name="LAST_COMMIT_MESSAGE" value="ADD: se crean los agregados Pasajero, Vuelo y Tripulacion, con sus respectivas entidades, objetos de valor e identificadores." />
   </component>
 </project>

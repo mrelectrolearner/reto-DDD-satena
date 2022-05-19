@@ -27,6 +27,8 @@ public class DatosPersonales implements ValueObject<DatosPersonales.Pros> {
         };
     }
 
+
+
     public interface Pros {
         Nombre nombre();
         Telefono telefono();
