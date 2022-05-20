@@ -3,14 +3,14 @@ package generics.values;
 import co.com.sofka.domain.generic.ValueObject;
 
 public class Itinerario implements ValueObject<Itinerario.Pros> {
-    private String codigoVuelo;
+    private CodigoVuelo codigoVuelo;
     private Fecha fecha;
     private Salida salida;
     private Origen origen;
     private Destino destino;
     private Llegada llegada;
 
-    public Itinerario(String codigoVuelo, Fecha fecha, Salida salida, Origen origen, Destino destino, Llegada llegada) {
+    public Itinerario(CodigoVuelo codigoVuelo, Fecha fecha, Salida salida, Origen origen, Destino destino, Llegada llegada) {
         this.codigoVuelo = codigoVuelo;
         this.fecha = fecha;
         this.salida = salida;
@@ -23,7 +23,7 @@ public class Itinerario implements ValueObject<Itinerario.Pros> {
     public Pros value() {
         return new Pros() {
             @Override
-            public String codigoVuelo() {
+            public CodigoVuelo codigoVuelo() {
                 return codigoVuelo;
             }
 
@@ -56,7 +56,7 @@ public class Itinerario implements ValueObject<Itinerario.Pros> {
 
 
     public interface Pros {
-        String codigoVuelo();
+        CodigoVuelo codigoVuelo();
         Fecha fecha();
         Salida salida();
         Origen origen();

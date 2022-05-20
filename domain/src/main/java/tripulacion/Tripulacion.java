@@ -45,15 +45,15 @@ public class Tripulacion extends AggregateEvent<IdTripulacion> {
         appendChange(new SobrecargoEliminado(idSobrecargo)).apply();
     }
 
-    public void agregarVuelos(IdPiloto idPiloto, Fecha fecha){
+    public void agregarVuelo(IdPiloto idPiloto, Fecha fecha){
         appendChange(new VueloAgregadoPiloto(idPiloto,fecha)).apply();
     }
 
-    public void agregarVuelos(IdCopiloto idCopiloto, Fecha fecha){
+    public void agregarVuelo(IdCopiloto idCopiloto, Fecha fecha){
         appendChange(new VueloAgregadoCopiloto(idCopiloto,fecha)).apply();
     }
 
-    public void agregarVuelos(IdSobrecargo idSobrecargo, Fecha fecha){
+    public void agregarVuelo(IdSobrecargo idSobrecargo, Fecha fecha){
         appendChange(new VueloAgregadoSobrecargo(idSobrecargo,fecha)).apply();
     }
 
