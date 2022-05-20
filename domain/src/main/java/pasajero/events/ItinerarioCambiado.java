@@ -7,7 +7,7 @@ public class ItinerarioCambiado extends DomainEvent {
 
     private final Itinerario itinerarioNuevo;
     public ItinerarioCambiado(Itinerario itinerarioNuevo) {
-        super("ItinerarioCambiado");
+        super("pasajero.ItinerarioCambiado");
 
         this.itinerarioNuevo = itinerarioNuevo;
     }

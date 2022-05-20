@@ -10,7 +10,7 @@ public class VueloReservado extends DomainEvent {
     private final Tarifa tarifa;
     private final IdReserva idReserva;
     public VueloReservado(IdReserva idReserva,Itinerario itinerario, Tarifa tarifa ) {
-        super("VueloReservado");
+        super("pasajero.VueloReservado");
         this.itinerario=itinerario;
         this.tarifa=tarifa;
         this.idReserva = idReserva;

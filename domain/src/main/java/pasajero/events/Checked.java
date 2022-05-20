@@ -14,7 +14,7 @@ public class Checked extends DomainEvent {
     private final NumeroAsiento numeroAsiento;
     private final IdAsiento idAsiento;
     public Checked(IdEquipaje idEquipaje, Peso peso, Volumen volumen, Tipo tipo, Descripcion descripcion, NumeroAsiento asiento, IdAsiento idAsiento) {
-        super("Checked");
+        super("pasajero.Checked");
         this.volumen = volumen;
         this.tipo = tipo;
         this.descripcion = descripcion;

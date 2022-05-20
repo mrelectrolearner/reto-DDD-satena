@@ -7,7 +7,7 @@ public class SobrecargoEliminado extends DomainEvent {
     private final IdSobrecargo idSobrecargo;
 
     public SobrecargoEliminado(IdSobrecargo idSobrecargo) {
-        super("SobrecargoEliminado");
+        super("tripulacion.SobrecargoEliminado");
         this.idSobrecargo = idSobrecargo;
     }
 

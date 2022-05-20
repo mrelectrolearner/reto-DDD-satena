@@ -9,7 +9,7 @@ public class SobrecargoAgregado extends DomainEvent {
     private final DatosPersonales datosPersonales;
 
     public SobrecargoAgregado(IdSobrecargo idSobrecargo, DatosPersonales datosPersonales) {
-        super("SobrecargoAgregado");
+        super("tripulacion.SobrecargoAgregado");
         this.idSobrecargo = idSobrecargo;
         this.datosPersonales = datosPersonales;
     }

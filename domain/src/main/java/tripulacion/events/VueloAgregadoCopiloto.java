@@ -9,7 +9,7 @@ public class VueloAgregadoCopiloto extends DomainEvent {
     private final Fecha fecha;
 
     public VueloAgregadoCopiloto(IdCopiloto idCopiloto, Fecha fecha) {
-        super("VueloAgregadoCopiloto");
+        super("tripulacion.VueloAgregadoCopiloto");
         this.idCopiloto = idCopiloto;
         this.fecha = fecha;
     }

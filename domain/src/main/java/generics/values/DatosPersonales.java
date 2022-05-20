@@ -7,6 +7,12 @@ public class DatosPersonales implements ValueObject<DatosPersonales.Pros> {
     private Telefono telefono;
     private Correo correo;
 
+    public DatosPersonales(Nombre nombre, Telefono telefono, Correo correo) {
+        this.nombre = nombre;
+        this.telefono = telefono;
+        this.correo = correo;
+    }
+
     @Override
     public DatosPersonales.Pros value() {
         return new Pros() {

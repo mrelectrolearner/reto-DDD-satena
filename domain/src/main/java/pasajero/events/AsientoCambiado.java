@@ -8,7 +8,7 @@ public class AsientoCambiado extends DomainEvent {
     private final NumeroAsiento numeroAsientoAsientoNuevo;
     private final IdAsiento idAsiento;
     public AsientoCambiado(NumeroAsiento nuevoAsiento, IdAsiento idAsiento) {
-        super("AsientoCambiado");
+        super("pasajero.AsientoCambiado");
         this.numeroAsientoAsientoNuevo =nuevoAsiento;
 
         this.idAsiento = idAsiento;

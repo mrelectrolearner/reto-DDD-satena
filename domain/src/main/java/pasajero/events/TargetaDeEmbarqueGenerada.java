@@ -14,7 +14,7 @@ public class TargetaDeEmbarqueGenerada extends DomainEvent {
     private final IdVuelo idVuelo;
     private final Itinerario itinerario;
     public TargetaDeEmbarqueGenerada(Nombre nombre, IdVuelo idvuelo, Itinerario itinerario, NumeroTicket numeroTicket, NumeroAsiento asiento) {
-        super("TargetaDeEmbarqueGenerada");
+        super("pasajero.TargetaDeEmbarqueGenerada");
         this.nombre=nombre;
         this.numeroTicket=numeroTicket;
         this.numeroAsiento =asiento;

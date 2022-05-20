@@ -12,7 +12,7 @@ public class TripulacionCreada extends DomainEvent {
     private final DatosPersonales datosCopiloto;
 
     public TripulacionCreada(IdPiloto idPiloto, IdCopiloto idCopiloto,DatosPersonales datosPiloto, DatosPersonales datosCopiloto) {
-        super("TripulacionCreada");
+        super("tripulacion.TripulacionCreada");
         this.idPiloto = idPiloto;
         this.idCopiloto = idCopiloto;
         this.datosPiloto = datosPiloto;

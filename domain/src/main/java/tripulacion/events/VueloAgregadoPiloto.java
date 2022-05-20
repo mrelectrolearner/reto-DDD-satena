@@ -9,7 +9,7 @@ public class VueloAgregadoPiloto extends DomainEvent {
     private final Fecha fecha;
 
     public VueloAgregadoPiloto(IdPiloto idPiloto, Fecha fecha) {
-        super("VueloAgregadoPiloto");
+        super("tripulacion.VueloAgregadoPiloto");
         this.idPiloto = idPiloto;
         this.fecha = fecha;
     }

@@ -8,7 +8,7 @@ public class CopilotoCambiado extends DomainEvent {
     private final DatosPersonales datosPersonales;
 
     public CopilotoCambiado(DatosPersonales datosPersonales) {
-        super("CopilotoCambiado");
+        super("tripulacion.CopilotoCambiado");
         this.datosPersonales = datosPersonales;
     }
 
