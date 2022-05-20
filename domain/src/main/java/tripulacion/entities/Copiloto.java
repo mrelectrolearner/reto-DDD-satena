@@ -13,7 +13,23 @@ public class Copiloto extends Entity<IdCopiloto> {
     private HashMap<Fecha, Disponibilidad> calendarioVuelos;
 
 
-    public Copiloto(IdCopiloto entityId) {
+    public Copiloto(IdCopiloto entityId, DatosPersonales datosPersonales) {
         super(entityId);
+        this.datosPersonales=datosPersonales;
+        this.calendarioVuelos=new HashMap<>();
+    }
+    public void cambiarDatosPersonales(DatosPersonales datosPersonales){
+        this.datosPersonales=datosPersonales;
+    }
+    public void agregarVuelo(Fecha fecha){
+        Disponibilidad nodisponible =new Disponibilidad(Disponibilidad.EstadoTripulante.NODISPONIBLE);
+        this.calendarioVuelos.put(fecha, nodisponible);
+    }
+    public DatosPersonales datosPersonales() {
+        return datosPersonales;
+    }
+
+    public HashMap<Fecha, Disponibilidad> calendarioVuelos() {
+        return calendarioVuelos;
     }
 }

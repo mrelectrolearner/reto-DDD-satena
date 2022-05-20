@@ -35,6 +35,7 @@ public class Pasajero extends AggregateEvent<IdPasajero> {
     public Pasajero(IdPasajero entityId, DatosPersonales datosPersonales) {
         super(entityId);
         appendChange(new PasajeroCreado(datosPersonales)).apply();
+        subscribe(new PasajeroEventChange(this));
     }
 
     public static Pasajero from(IdPasajero idPasajero, List<DomainEvent> events){

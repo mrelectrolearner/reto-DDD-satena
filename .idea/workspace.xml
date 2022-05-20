@@ -4,10 +4,23 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="9a400ce3-671a-4b6e-83e0-2c3b85deec72" name="Changes" comment="fix Pasajero: se agregaron metodos a Asiento para cambiar el estado del asiento y el numero.">
-      <change afterPath="$PROJECT_DIR$/domain/src/main/java/pasajero/commands/CambiarAsiento.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/domain/src/main/java/pasajero/commands/CheckIn.java" afterDir="false" />
+    <list default="true" id="9a400ce3-671a-4b6e-83e0-2c3b85deec72" name="Changes" comment="ADD eventos Tripulacion: se agreegaron los eventos de tripulacion y se implementarios sus respectivos apply en TripulacionEventChange. Se modifico Piloto, Copiloto y Sobrecargo para introducir constructores y metodos para realizar los cambios en los atributos necesarios en los eventos.">
+      <change afterPath="$PROJECT_DIR$/domain/src/main/java/tripulacion/TripulacionEventChange.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/domain/src/main/java/tripulacion/events/CopilotoCambiado.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/domain/src/main/java/tripulacion/events/PilotoCambiado.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/domain/src/main/java/tripulacion/events/SobrecargoAgregado.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/domain/src/main/java/tripulacion/events/SobrecargoEliminado.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/domain/src/main/java/tripulacion/events/TripulacionCreada.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/domain/src/main/java/tripulacion/events/VueloAgregadoCopiloto.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/domain/src/main/java/tripulacion/events/VueloAgregadoPiloto.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/domain/src/main/java/tripulacion/events/VueloAgregadoSobrecargo.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/domain/src/main/java/pasajero/Pasajero.java" beforeDir="false" afterPath="$PROJECT_DIR$/domain/src/main/java/pasajero/Pasajero.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/domain/src/main/java/tripulacion/Tripulacion.java" beforeDir="false" afterPath="$PROJECT_DIR$/domain/src/main/java/tripulacion/Tripulacion.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/domain/src/main/java/tripulacion/entities/Copiloto.java" beforeDir="false" afterPath="$PROJECT_DIR$/domain/src/main/java/tripulacion/entities/Copiloto.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/domain/src/main/java/tripulacion/entities/Piloto.java" beforeDir="false" afterPath="$PROJECT_DIR$/domain/src/main/java/tripulacion/entities/Piloto.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/domain/src/main/java/tripulacion/entities/Sobrecargo.java" beforeDir="false" afterPath="$PROJECT_DIR$/domain/src/main/java/tripulacion/entities/Sobrecargo.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/domain/src/main/java/tripulacion/values/Disponibilidad.java" beforeDir="false" afterPath="$PROJECT_DIR$/domain/src/main/java/tripulacion/values/Disponibilidad.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -42,11 +55,11 @@
 }</component>
   <component name="RecentsManager">
     <key name="CreateClassDialog.RecentsKey">
+      <recent name="tripulacion" />
+      <recent name="tripulacion.events" />
       <recent name="generics.values" />
       <recent name="pasajero.events" />
       <recent name="pasajero.values" />
-      <recent name="pasajero.entities" />
-      <recent name="tripulacion.identities" />
     </key>
     <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
       <recent name="generics.values" />
@@ -104,7 +117,14 @@
       <option name="project" value="LOCAL" />
       <updated>1653005231513</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="ADD commandos Pasajero: se agreegaron los comandos para pasajero.">
+      <created>1653007187200</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1653007187200</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -124,6 +144,8 @@
     <MESSAGE value="fix Pasajero: se cambiaron los eventos, el Pasajero y PasajeroEventChange para no utilizar entidades en los eventos. Se cambio el objeto de valor Numero -&gt; NumeroAsiento" />
     <MESSAGE value="fix Pasajero: se cambiaron los eventos, el Pasajero y PasajeroEventChange para no utilizar entidades en los eventos." />
     <MESSAGE value="fix Pasajero: se agregaron metodos a Asiento para cambiar el estado del asiento y el numero." />
-    <option name="LAST_COMMIT_MESSAGE" value="fix Pasajero: se agregaron metodos a Asiento para cambiar el estado del asiento y el numero." />
+    <MESSAGE value="ADD commandos Pasajero: se agreegaron los comandos para pasajero." />
+    <MESSAGE value="ADD eventos Tripulacion: se agreegaron los eventos de tripulacion y se implementarios sus respectivos apply en TripulacionEventChange. Se modifico Piloto, Copiloto y Sobrecargo para introducir constructores y metodos para realizar los cambios en los atributos necesarios en los eventos." />
+    <option name="LAST_COMMIT_MESSAGE" value="ADD eventos Tripulacion: se agreegaron los eventos de tripulacion y se implementarios sus respectivos apply en TripulacionEventChange. Se modifico Piloto, Copiloto y Sobrecargo para introducir constructores y metodos para realizar los cambios en los atributos necesarios en los eventos." />
   </component>
 </project>
