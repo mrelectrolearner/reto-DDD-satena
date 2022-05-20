@@ -9,11 +9,20 @@ public class Asiento extends Entity<IdAsiento> {
     protected NumeroAsiento numeroAsiento;
     protected EstadoAsiento estado;
 
-    public Asiento(IdAsiento entityId, NumeroAsiento numeroAsiento) {
+    public Asiento(IdAsiento entityId) {
         super(entityId);
-        this.numeroAsiento = numeroAsiento;
-        this.estado=new EstadoAsiento(EstadoAsiento.Estado.DISPONIBLE);
+        this.estado=new EstadoAsiento(EstadoAsiento.Estado.NODISPONIBLE);
     }
+
+    public void assignarNumeroAsiento(NumeroAsiento numeroAsiento){
+        this.numeroAsiento=numeroAsiento;
+
+    }
+    public void cambiarEstado(EstadoAsiento estado){
+        this.estado=estado;
+
+    }
+
 
     public NumeroAsiento getNumero() {
         return numeroAsiento;

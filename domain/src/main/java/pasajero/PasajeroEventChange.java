@@ -13,7 +13,10 @@ public class PasajeroEventChange extends EventChange {
         apply((AsientoCambiado event)->{
             var numeroAsiento=event.getNumeroAsientoNuevo();
             var idAsiento=event.getIdAsiento();
-            pasajero.asiento=new Asiento(idAsiento,numeroAsiento);
+            var estadoAsiento=new EstadoAsiento(EstadoAsiento.Estado.DISPONIBLE);
+            pasajero.asiento=new Asiento(idAsiento);
+            pasajero.asiento.assignarNumeroAsiento(numeroAsiento);
+            pasajero.asiento.cambiarEstado(estadoAsiento);
 
         });
 
@@ -24,16 +27,18 @@ public class PasajeroEventChange extends EventChange {
             var descripcion =event.getDescripcion();
             var tipo=event.getTipo();
             var idEquipaje=event.getIdEquipaje();
+            var estadoAsiento=new EstadoAsiento(EstadoAsiento.Estado.DISPONIBLE);
 
-            pasajero.equipaje=new Equipaje(idEquipaje,peso, volumen, tipo,descripcion);
-            pasajero.asiento=new Asiento(event.getIdAsiento(),numeroAsiento);;
+            pasajero.equipaje =new Equipaje(idEquipaje,peso, volumen, tipo,descripcion);
+            pasajero.asiento=new Asiento(event.getIdAsiento());
+            pasajero.asiento.assignarNumeroAsiento(numeroAsiento);
+            pasajero.asiento.cambiarEstado(estadoAsiento);
             pasajero.check=new Check(true);
         });
+
         apply((ItinerarioCambiado event)->{
-            pasajero.reservacion.agregarItinerario(event.getItinerarioNuevo());
-
+            pasajero.reservacion.cambiarItinerario(event.getItinerarioNuevo());
         });
-
 
         apply((PasajeroCreado event)->{
             pasajero.datosPersonales=event.getDatosPersonales();

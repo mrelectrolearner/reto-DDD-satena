@@ -18,7 +18,8 @@ public class Equipaje extends Entity<IdEquipaje> {
         this.descripcion = descripcion;
     }
 
-    public Equipaje(IdEquipaje entityId) {
-        super(entityId);
-    }
+
+
+
+
 }

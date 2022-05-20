@@ -6,10 +6,8 @@ import pasajero.values.EstadoReserva;
 import generics.values.Itinerario;
 import pasajero.values.Tarifa;
 
-import java.util.Set;
-
 public class Reservacion extends Entity<IdReserva> {
-    protected EstadoReserva Estado;
+    protected EstadoReserva estado;
     protected Itinerario itinerario;
     protected Tarifa tarifa;
 
@@ -22,9 +20,19 @@ public class Reservacion extends Entity<IdReserva> {
         this.tarifa=tarifa;
         this.itinerario=itinerario;
     }
+    public void cambiarItinerario(Itinerario itinerario){
+        this.itinerario=itinerario;
+    }
+
+    public void cambiarEstado(EstadoReserva estado){
+        this.estado=estado;
+    }
+    public void cambiarTarifa(Tarifa tarifa){
+        this.tarifa=tarifa;
+    }
 
     public EstadoReserva estado() {
-        return Estado;
+        return estado;
     }
 
     public Itinerario itinerario() {
@@ -35,9 +43,7 @@ public class Reservacion extends Entity<IdReserva> {
         return tarifa;
     }
 
-    public void agregarItinerario(Itinerario itinerario){
-        this.itinerario=itinerario;
-    }
+
 
 
 
