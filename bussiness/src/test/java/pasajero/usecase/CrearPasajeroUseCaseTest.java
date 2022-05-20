@@ -23,7 +23,7 @@ class CrearPasajeroUseCaseTest {
     public void crearPasajeroHappyPass(){
         //arrange
         var idPasajero= pasajero.identities.IdPasajero.of("xxx");
-        var nombre=new Nombre("l");
+        var nombre=new Nombre("lyyy");
         var telefono=new Telefono("1111");
         var correo=new Correo("p@gp.com");
         var datosPasajero=new DatosPersonales( nombre,telefono,correo);

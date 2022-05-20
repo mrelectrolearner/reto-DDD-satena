@@ -2,19 +2,16 @@ package vuelo.values;
 
 import co.com.sofka.domain.generic.ValueObject;
 
-public class Capacidad implements ValueObject<Capacidad.Pros> {
+public class Capacidad implements ValueObject<Double> {
 
-    private Double maximaCarga;
-    private Integer maximoNumeroDePasajeros;
-    private Double maximoHorasDeVuelo;
+    private Double valor;
 
-    @Override
-    public Pros value() {
-        return null;
+    public Capacidad(Double valor) {
+        this.valor = valor;
     }
 
-    public interface Pros {
-
-
+    @Override
+    public Double value() {
+        return valor;
     }
 }

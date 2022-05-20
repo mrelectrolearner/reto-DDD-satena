@@ -1,7 +1,6 @@
 package tripulacion;
 
 import co.com.sofka.domain.generic.EventChange;
-import tripulacion.entities.Copiloto;
 import tripulacion.entities.Piloto;
 import tripulacion.entities.Sobrecargo;
 import tripulacion.events.*;
@@ -12,11 +11,8 @@ public class TripulacionEventChange extends EventChange {
     public TripulacionEventChange(Tripulacion tripulacion) {
         apply((TripulacionCreada event)->{
             var idPiloto=event.getIdPiloto();
-            var idCopiloto=event.getIdCopiloto();
-            var datosPiloto=event.getDatosCopiloto();
-            var datosCopiloto=event.getDatosPiloto();
+            var datosPiloto=event.getDatosPiloto();
             tripulacion.piloto=new Piloto(idPiloto,datosPiloto);
-            tripulacion.copiloto=new Copiloto(idCopiloto,datosCopiloto);
             tripulacion.sobrecargos=new HashMap<>();
 
         });
@@ -26,7 +22,7 @@ public class TripulacionEventChange extends EventChange {
             tripulacion.copiloto.cambiarDatosPersonales(datosPersonales);
         });
 
-        apply((PilotoCambiado event)->{
+        apply((PilotoModificado event)->{
             var datosPersonales=event.getDatosPersonales();
             tripulacion.piloto.cambiarDatosPersonales(datosPersonales);
         });

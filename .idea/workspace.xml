@@ -4,43 +4,48 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="9a400ce3-671a-4b6e-83e0-2c3b85deec72" name="Changes" comment="ADD CodigoVuelo: se agrego el objeto de valor CodigoVuelo a Tripulacion">
-      <change afterPath="$PROJECT_DIR$/bussiness/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/bussiness/src/main/java/pasajero/usecase/CambiarAsientoUseCase.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/bussiness/src/main/java/pasajero/usecase/CrearPasajeroUseCase.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/bussiness/src/main/java/pasajero/usecase/ReservarVueloUseCase.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/bussiness/src/test/java/pasajero/usecase/CrearPasajeroUseCaseTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/bussiness/src/test/java/pasajero/usecase/ReservarVueloUseCaseTest.java" afterDir="false" />
+    <list default="true" id="9a400ce3-671a-4b6e-83e0-2c3b85deec72" name="Changes" comment="ADD modulo business: se crea el modulo business y se agregan los casos de uso CrearPasajeroUseCase y ReservarVueloUseCase con sus respectivas pruebas unitarias.">
+      <change afterPath="$PROJECT_DIR$/bussiness/src/main/java/tripulacion/usecase/CrearTripulacionUseCase.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bussiness/src/main/java/tripulacion/usecase/ModificarPilotoUseCase.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bussiness/src/main/java/vuelo/usecase/AgregarAvionUseCase.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bussiness/src/main/java/vuelo/usecase/CrearVueloUseCase.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bussiness/src/test/java/pasajero/usecase/CambiarAsientoUseCaseTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bussiness/src/test/java/tripulacion/usecase/CrearTripulacionUseCaseTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bussiness/src/test/java/tripulacion/usecase/ModificarPilotoUseCaseTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bussiness/src/test/java/vuelo/usecase/AgregarAvionUseCaseTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bussiness/src/test/java/vuelo/usecase/CrearVueloUseCaseTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/domain/src/main/java/tripulacion/commands/ModificarPiloto.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/domain/src/main/java/vuelo/VueloEventChange.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/domain/src/main/java/vuelo/commands/AgregarAvion.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/domain/src/main/java/vuelo/commands/CrearVuelo.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/domain/src/main/java/vuelo/events/AvionAgregado.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/domain/src/main/java/vuelo/events/VueloCreado.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/domain/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/domain/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/domain/src/main/java/generics/values/Correo.java" beforeDir="false" afterPath="$PROJECT_DIR$/domain/src/main/java/generics/values/Correo.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/domain/src/main/java/generics/values/DatosPersonales.java" beforeDir="false" afterPath="$PROJECT_DIR$/domain/src/main/java/generics/values/DatosPersonales.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/domain/src/main/java/generics/values/Destino.java" beforeDir="false" afterPath="$PROJECT_DIR$/domain/src/main/java/generics/values/Destino.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/domain/src/main/java/generics/values/Fecha.java" beforeDir="false" afterPath="$PROJECT_DIR$/domain/src/main/java/generics/values/Fecha.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/domain/src/main/java/generics/values/Llegada.java" beforeDir="false" afterPath="$PROJECT_DIR$/domain/src/main/java/generics/values/Llegada.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/domain/src/main/java/generics/values/Nombre.java" beforeDir="false" afterPath="$PROJECT_DIR$/domain/src/main/java/generics/values/Nombre.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/domain/src/main/java/generics/values/Origen.java" beforeDir="false" afterPath="$PROJECT_DIR$/domain/src/main/java/generics/values/Origen.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/domain/src/main/java/generics/values/Salida.java" beforeDir="false" afterPath="$PROJECT_DIR$/domain/src/main/java/generics/values/Salida.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/domain/src/main/java/generics/values/Telefono.java" beforeDir="false" afterPath="$PROJECT_DIR$/domain/src/main/java/generics/values/Telefono.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/domain/src/main/java/pasajero/commands/CrearPasajero.java" beforeDir="false" afterPath="$PROJECT_DIR$/domain/src/main/java/pasajero/commands/CrearPasajero.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/domain/src/main/java/pasajero/commands/ReservarVuelo.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/domain/src/main/java/pasajero/events/AsientoCambiado.java" beforeDir="false" afterPath="$PROJECT_DIR$/domain/src/main/java/pasajero/events/AsientoCambiado.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/domain/src/main/java/pasajero/events/Checked.java" beforeDir="false" afterPath="$PROJECT_DIR$/domain/src/main/java/pasajero/events/Checked.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/domain/src/main/java/pasajero/events/ItinerarioCambiado.java" beforeDir="false" afterPath="$PROJECT_DIR$/domain/src/main/java/pasajero/events/ItinerarioCambiado.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/domain/src/main/java/pasajero/events/PasajeroCreado.java" beforeDir="false" afterPath="$PROJECT_DIR$/domain/src/main/java/pasajero/events/PasajeroCreado.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/domain/src/main/java/pasajero/events/TargetaDeEmbarqueGenerada.java" beforeDir="false" afterPath="$PROJECT_DIR$/domain/src/main/java/pasajero/events/TargetaDeEmbarqueGenerada.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/domain/src/main/java/pasajero/events/VueloReservado.java" beforeDir="false" afterPath="$PROJECT_DIR$/domain/src/main/java/pasajero/events/VueloReservado.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/domain/src/main/java/pasajero/identities/IdReserva.java" beforeDir="false" afterPath="$PROJECT_DIR$/domain/src/main/java/pasajero/identities/IdReserva.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/domain/src/main/java/tripulacion/events/CopilotoCambiado.java" beforeDir="false" afterPath="$PROJECT_DIR$/domain/src/main/java/tripulacion/events/CopilotoCambiado.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/domain/src/main/java/tripulacion/events/PilotoCambiado.java" beforeDir="false" afterPath="$PROJECT_DIR$/domain/src/main/java/tripulacion/events/PilotoCambiado.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/domain/src/main/java/tripulacion/events/SobrecargoAgregado.java" beforeDir="false" afterPath="$PROJECT_DIR$/domain/src/main/java/tripulacion/events/SobrecargoAgregado.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/domain/src/main/java/tripulacion/events/SobrecargoEliminado.java" beforeDir="false" afterPath="$PROJECT_DIR$/domain/src/main/java/tripulacion/events/SobrecargoEliminado.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bussiness/src/main/java/pasajero/usecase/CambiarAsientoUseCase.java" beforeDir="false" afterPath="$PROJECT_DIR$/bussiness/src/main/java/pasajero/usecase/CambiarAsientoUseCase.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bussiness/src/test/java/pasajero/usecase/ReservarVueloUseCaseTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/bussiness/src/test/java/pasajero/usecase/ReservarVueloUseCaseTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/domain/src/main/java/pasajero/commands/CambiarAsiento.java" beforeDir="false" afterPath="$PROJECT_DIR$/domain/src/main/java/pasajero/commands/CambiarAsiento.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/domain/src/main/java/pasajero/commands/CambiarItinerario.java" beforeDir="false" afterPath="$PROJECT_DIR$/domain/src/main/java/pasajero/commands/CambiarItinerario.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/domain/src/main/java/pasajero/commands/CheckIn.java" beforeDir="false" afterPath="$PROJECT_DIR$/domain/src/main/java/pasajero/commands/CheckIn.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/domain/src/main/java/tripulacion/Tripulacion.java" beforeDir="false" afterPath="$PROJECT_DIR$/domain/src/main/java/tripulacion/Tripulacion.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/domain/src/main/java/tripulacion/TripulacionEventChange.java" beforeDir="false" afterPath="$PROJECT_DIR$/domain/src/main/java/tripulacion/TripulacionEventChange.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/domain/src/main/java/tripulacion/commands/AgregarSobrecargo.java" beforeDir="false" afterPath="$PROJECT_DIR$/domain/src/main/java/tripulacion/commands/AgregarSobrecargo.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/domain/src/main/java/tripulacion/commands/AgregarVueloCopiloto.java" beforeDir="false" afterPath="$PROJECT_DIR$/domain/src/main/java/tripulacion/commands/AgregarVueloCopiloto.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/domain/src/main/java/tripulacion/commands/AgregarVueloPiloto.java" beforeDir="false" afterPath="$PROJECT_DIR$/domain/src/main/java/tripulacion/commands/AgregarVueloPiloto.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/domain/src/main/java/tripulacion/commands/AgregarVueloSobrecargo.java" beforeDir="false" afterPath="$PROJECT_DIR$/domain/src/main/java/tripulacion/commands/AgregarVueloSobrecargo.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/domain/src/main/java/tripulacion/commands/CambiarCopiloto.java" beforeDir="false" afterPath="$PROJECT_DIR$/domain/src/main/java/tripulacion/commands/CambiarCopiloto.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/domain/src/main/java/tripulacion/commands/CambiarPiloto.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/domain/src/main/java/tripulacion/commands/SobrecargoEliminado.java" beforeDir="false" afterPath="$PROJECT_DIR$/domain/src/main/java/tripulacion/commands/SobrecargoEliminado.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/domain/src/main/java/tripulacion/commands/crearTripulacion.java" beforeDir="false" afterPath="$PROJECT_DIR$/domain/src/main/java/tripulacion/commands/CrearTripulacion.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/domain/src/main/java/tripulacion/events/PilotoCambiado.java" beforeDir="false" afterPath="$PROJECT_DIR$/domain/src/main/java/tripulacion/events/PilotoModificado.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/domain/src/main/java/tripulacion/events/TripulacionCreada.java" beforeDir="false" afterPath="$PROJECT_DIR$/domain/src/main/java/tripulacion/events/TripulacionCreada.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/domain/src/main/java/tripulacion/events/VueloAgregadoCopiloto.java" beforeDir="false" afterPath="$PROJECT_DIR$/domain/src/main/java/tripulacion/events/VueloAgregadoCopiloto.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/domain/src/main/java/tripulacion/events/VueloAgregadoPiloto.java" beforeDir="false" afterPath="$PROJECT_DIR$/domain/src/main/java/tripulacion/events/VueloAgregadoPiloto.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/domain/src/main/java/tripulacion/events/VueloAgregadoSobrecargo.java" beforeDir="false" afterPath="$PROJECT_DIR$/domain/src/main/java/tripulacion/events/VueloAgregadoSobrecargo.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/domain/src/main/java/tripulacion/identities/IdPiloto.java" beforeDir="false" afterPath="$PROJECT_DIR$/domain/src/main/java/tripulacion/identities/IdPiloto.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/domain/src/main/java/tripulacion/identities/IdTripulacion.java" beforeDir="false" afterPath="$PROJECT_DIR$/domain/src/main/java/tripulacion/identities/IdTripulacion.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/domain/src/main/java/vuelo/Vuelo.java" beforeDir="false" afterPath="$PROJECT_DIR$/domain/src/main/java/vuelo/Vuelo.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/domain/src/main/java/vuelo/entities/Avion.java" beforeDir="false" afterPath="$PROJECT_DIR$/domain/src/main/java/vuelo/entities/Avion.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/domain/src/main/java/vuelo/entities/Ruta.java" beforeDir="false" afterPath="$PROJECT_DIR$/domain/src/main/java/vuelo/entities/Ruta.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/domain/src/main/java/vuelo/identities/IdAvion.java" beforeDir="false" afterPath="$PROJECT_DIR$/domain/src/main/java/vuelo/identities/IdAvion.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/domain/src/main/java/vuelo/identities/IdVuelo.java" beforeDir="false" afterPath="$PROJECT_DIR$/domain/src/main/java/vuelo/identities/IdVuelo.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/domain/src/main/java/vuelo/values/Capacidad.java" beforeDir="false" afterPath="$PROJECT_DIR$/domain/src/main/java/vuelo/values/Capacidad.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -50,8 +55,8 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="JUnit5 Test Class" />
         <option value="Class" />
+        <option value="JUnit5 Test Class" />
       </list>
     </option>
   </component>
@@ -73,16 +78,19 @@
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary": "JUnit5",
     "com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5": "",
-    "jdk.selected.JAVA_MODULE": "17"
+    "jdk.selected.JAVA_MODULE": "17",
+    "project.structure.last.edited": "Problems",
+    "project.structure.proportion": "0.0",
+    "project.structure.side.proportion": "0.2"
   }
 }]]></component>
   <component name="RecentsManager">
     <key name="CreateClassDialog.RecentsKey">
+      <recent name="vuelo.events" />
+      <recent name="vuelo" />
       <recent name="generics.values" />
       <recent name="tripulacion" />
       <recent name="tripulacion.events" />
-      <recent name="pasajero.events" />
-      <recent name="pasajero.values" />
     </key>
     <key name="CreateTestDialog.Recents.Supers">
       <recent name="" />
@@ -92,37 +100,31 @@
       <recent name="pasajero" />
     </key>
     <key name="CreateTestDialog.RecentsKey">
+      <recent name="tripulacion.usecase" />
+      <recent name="vuelo.usecase" />
       <recent name="pasajero.usecase" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.pasajero.usecase in bussiness">
-    <configuration name="CrearPasajeroUseCaseTest.crearPasajeroHappyPass" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+  <component name="RunManager" selected="JUnit.All in bussiness">
+    <configuration name="All in bussiness" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="bussiness" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="pasajero.usecase.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="pasajero.usecase" />
-      <option name="MAIN_CLASS_NAME" value="pasajero.usecase.CrearPasajeroUseCaseTest" />
-      <option name="METHOD_NAME" value="crearPasajeroHappyPass" />
-      <option name="TEST_OBJECT" value="method" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="TEST_OBJECT" value="package" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="ReservarVueloUseCaseTest.happyReservaVueloUseCase" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="ModificarPilotoUseCaseTest.modificarPilotoUseCaseHappyTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="bussiness" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="pasajero.usecase.*" />
+          <option name="PATTERN" value="tripulacion.usecase.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="pasajero.usecase" />
-      <option name="MAIN_CLASS_NAME" value="pasajero.usecase.ReservarVueloUseCaseTest" />
-      <option name="METHOD_NAME" value="happyReservaVueloUseCase" />
+      <option name="PACKAGE_NAME" value="tripulacion.usecase" />
+      <option name="MAIN_CLASS_NAME" value="tripulacion.usecase.ModificarPilotoUseCaseTest" />
+      <option name="METHOD_NAME" value="modificarPilotoUseCaseHappyTest" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -142,11 +144,41 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="tripulacion.usecase in bussiness" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="bussiness" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="tripulacion.usecase.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="tripulacion.usecase" />
+      <option name="TEST_OBJECT" value="package" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="vuelo.usecase in bussiness" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="bussiness" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="vuelo.usecase.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="vuelo.usecase" />
+      <option name="TEST_OBJECT" value="package" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.All in bussiness" />
         <item itemvalue="JUnit.pasajero.usecase in bussiness" />
-        <item itemvalue="JUnit.ReservarVueloUseCaseTest.happyReservaVueloUseCase" />
-        <item itemvalue="JUnit.CrearPasajeroUseCaseTest.crearPasajeroHappyPass" />
+        <item itemvalue="JUnit.vuelo.usecase in bussiness" />
+        <item itemvalue="JUnit.tripulacion.usecase in bussiness" />
+        <item itemvalue="JUnit.ModificarPilotoUseCaseTest.modificarPilotoUseCaseHappyTest" />
       </list>
     </recent_temporary>
   </component>
@@ -236,7 +268,14 @@
       <option name="project" value="LOCAL" />
       <updated>1653050559008</updated>
     </task>
-    <option name="localTasksCounter" value="12" />
+    <task id="LOCAL-00012" summary="ADD modulo business: se crea el modulo business y se agregan los casos de uso CrearPasajeroUseCase y ReservarVueloUseCase con sus respectivas pruebas unitarias.">
+      <created>1653072812239</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1653072812239</updated>
+    </task>
+    <option name="localTasksCounter" value="13" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -260,6 +299,30 @@
     <MESSAGE value="ADD eventos Tripulacion: se agreegaron los eventos de tripulacion y se implementarios sus respectivos apply en TripulacionEventChange. Se modifico Piloto, Copiloto y Sobrecargo para introducir constructores y metodos para realizar los cambios en los atributos necesarios en los eventos." />
     <MESSAGE value="ADD comandos Tripulacion: se agreegaron los comandos de tripulacion." />
     <MESSAGE value="ADD CodigoVuelo: se agrego el objeto de valor CodigoVuelo a Tripulacion" />
-    <option name="LAST_COMMIT_MESSAGE" value="ADD CodigoVuelo: se agrego el objeto de valor CodigoVuelo a Tripulacion" />
+    <MESSAGE value="ADD modulo business: se crea el modulo business y se agregan los casos de uso CrearPasajeroUseCase y ReservarVueloUseCase con sus respectivas pruebas unitarias." />
+    <option name="LAST_COMMIT_MESSAGE" value="ADD modulo business: se crea el modulo business y se agregan los casos de uso CrearPasajeroUseCase y ReservarVueloUseCase con sus respectivas pruebas unitarias." />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/domain/src/main/java/pasajero/PasajeroEventChange.java</url>
+          <line>56</line>
+          <option name="timeStamp" value="2" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
+  </component>
+  <component name="com.intellij.coverage.CoverageDataManagerImpl">
+    <SUITE FILE_PATH="coverage/DDD_satena$pasajero_usecase_in_bussiness.ic" NAME="pasajero.usecase in bussiness Coverage Results" MODIFIED="1653081216069" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
+      <FILTER>pasajero.usecase.*</FILTER>
+    </SUITE>
+    <SUITE FILE_PATH="coverage/DDD_satena$CrearPasajeroUseCaseTest.ic" NAME="CrearPasajeroUseCaseTest Coverage Results" MODIFIED="1653080675232" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
+      <FILTER>pasajero.usecase.*</FILTER>
+    </SUITE>
+    <SUITE FILE_PATH="coverage/DDD_satena$CambiarAsientoUseCaseTest.ic" NAME="CambiarAsientoUseCaseTest Coverage Results" MODIFIED="1653080643380" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
+      <FILTER>pasajero.usecase.*</FILTER>
+    </SUITE>
+    <SUITE FILE_PATH="coverage/DDD_satena$All_in_bussiness.ic" NAME="All in bussiness Coverage Results" MODIFIED="1653088260298" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
   </component>
 </project>

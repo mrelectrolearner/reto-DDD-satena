@@ -2,22 +2,23 @@ package tripulacion.commands;
 
 import co.com.sofka.domain.generic.Command;
 import generics.values.DatosPersonales;
-import tripulacion.identities.IdCopiloto;
+import tripulacion.identities.IdPiloto;
 import tripulacion.identities.IdTripulacion;
 
-public class CambiarCopiloto extends Command {
+public class ModificarPiloto extends Command {
     private final IdTripulacion idTripulacion;
-    private final IdCopiloto idCopiloto;
+
+    private final IdPiloto idPiloto;
     private final DatosPersonales datosPersonales;
 
-    public CambiarCopiloto(IdTripulacion idTripulacion, IdCopiloto idCopiloto, DatosPersonales datosPersonales) {
+    public ModificarPiloto(IdTripulacion idTripulacion, IdPiloto idPiloto, DatosPersonales datosPersonales) {
         this.idTripulacion = idTripulacion;
-        this.idCopiloto = idCopiloto;
+        this.idPiloto = idPiloto;
         this.datosPersonales = datosPersonales;
     }
 
-    public IdCopiloto getIdCopiloto() {
-        return idCopiloto;
+    public IdPiloto getIdPiloto() {
+        return idPiloto;
     }
 
     public IdTripulacion getIdTripulacion() {

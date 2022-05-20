@@ -1,12 +1,14 @@
-package tripulacion.commands;
+package tripulacion.events;
 
-import co.com.sofka.domain.generic.Command;
+import co.com.sofka.domain.generic.DomainEvent;
 import generics.values.DatosPersonales;
 
-public class CambiarPiloto extends Command {
+public class PilotoModificado extends DomainEvent {
     private final DatosPersonales datosPersonales;
 
-    public CambiarPiloto(DatosPersonales datosPersonales) {
+    public PilotoModificado(DatosPersonales datosPersonales) {
+        super("tripulacion.PilotoModificado");
+
         this.datosPersonales = datosPersonales;
     }
 

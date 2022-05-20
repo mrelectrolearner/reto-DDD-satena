@@ -1,6 +1,7 @@
 package tripulacion;
 
 import co.com.sofka.domain.generic.AggregateEvent;
+import co.com.sofka.domain.generic.DomainEvent;
 import generics.values.DatosPersonales;
 import generics.values.Fecha;
 import tripulacion.entities.Copiloto;
@@ -12,6 +13,7 @@ import tripulacion.identities.IdPiloto;
 import tripulacion.identities.IdSobrecargo;
 import tripulacion.identities.IdTripulacion;
 
+import java.util.List;
 import java.util.Map;
 
 
@@ -20,17 +22,25 @@ public class Tripulacion extends AggregateEvent<IdTripulacion> {
     protected Copiloto copiloto;
     protected Map<IdSobrecargo,Sobrecargo> sobrecargos;
 
-    public Tripulacion(IdTripulacion entityId, DatosPersonales datosPiloto, DatosPersonales datosCopiloto,
-                       IdPiloto idPiloto, IdCopiloto idCopiloto) {
+    public Tripulacion(IdTripulacion entityId, DatosPersonales datosPiloto,
+                       IdPiloto idPiloto) {
         super(entityId);
-        appendChange(new TripulacionCreada(idPiloto, idCopiloto,datosPiloto,datosCopiloto)).apply();
+        appendChange(new TripulacionCreada(idPiloto,datosPiloto)).apply();
         subscribe(new TripulacionEventChange(this));
     }
 
+    public Tripulacion(IdTripulacion idTripulacion) {
+        super(idTripulacion);
+    }
 
+    public static Tripulacion from(IdTripulacion idTripulacion, List<DomainEvent> events){
+        var tripulacion = new Tripulacion(idTripulacion);
+        events.forEach(tripulacion::applyEvent);
+        return tripulacion;
+    }
 
-    public void cambiarPiloto(DatosPersonales datosPiloto){
-        appendChange(new PilotoCambiado(datosPiloto)).apply();
+    public void modificarPiloto(DatosPersonales datosPiloto){
+        appendChange(new PilotoModificado(datosPiloto)).apply();
     }
 
     public void cambiarCopiloto(DatosPersonales datosCopiloto){

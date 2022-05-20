@@ -10,6 +10,11 @@ public class Ruta extends Entity<IdRuta> {
     protected Itinerario itinerario;
     protected Ubicacion ubicacionActual;
 
+    public Ruta(IdRuta entityId, Itinerario itinerario) {
+        super(entityId);
+        this.itinerario = itinerario;
+    }
+
     public Ruta(IdRuta entityId) {
         super(entityId);
     }

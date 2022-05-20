@@ -9,7 +9,9 @@ public class Avion extends Entity<IdAvion> {
     protected Modelo modelo;
     protected Capacidad capacidad;
 
-    public Avion(IdAvion entityId) {
+    public Avion(IdAvion entityId,Modelo modelo, Capacidad capacidad) {
         super(entityId);
+        this.modelo=modelo;
+        this.capacidad=capacidad;
     }
 }

@@ -10,6 +10,7 @@ import org.junit.jupiter.api.Test;
 import org.junit.jupiter.api.extension.ExtendWith;
 import org.mockito.InjectMocks;
 import org.mockito.Mock;
+import org.mockito.Mockito;
 import org.mockito.junit.jupiter.MockitoExtension;
 import pasajero.Pasajero;
 import pasajero.commands.ReservarVuelo;
@@ -36,7 +37,6 @@ class ReservarVueloUseCaseTest {
     @Test
     void happyReservaVueloUseCase(){
         //arrange
-        var pasajero = IdPasajero.of("xxx");
         CodigoVuelo codigovuelo=new CodigoVuelo("sd");
         Fecha fecha=new Fecha(LocalDate.now());
         Salida salida=new Salida("cali");
@@ -46,9 +46,9 @@ class ReservarVueloUseCaseTest {
         var itinerario=new Itinerario(codigovuelo,fecha,salida,origen,destino,llegada);
         var tarifa=new Tarifa(1D);
         var idReserva=IdReserva.of("reserva");
-        var idPasajero=IdPasajero.of("pasajero");
+        var idPasajero=IdPasajero.of("xix");
         var command= new ReservarVuelo(itinerario,tarifa,idReserva,idPasajero);
-        when(repository.getEventsBy("pasajero")).thenReturn(history());
+        when(repository.getEventsBy("xix")).thenReturn(history());
         reservarVueloUseCase.addRepository(repository);
 
         //act
@@ -62,6 +62,7 @@ class ReservarVueloUseCaseTest {
         Assertions.assertEquals("reserva",vueloReservado.getIdReserva().value());
         Assertions.assertEquals(itinerario,vueloReservado.getItinerario());
         Assertions.assertEquals(tarifa,vueloReservado.getTarifa());
+        Mockito.verify(repository).getEventsBy("xix");
 
     }
 

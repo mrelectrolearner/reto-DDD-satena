@@ -1,19 +1,23 @@
 package tripulacion.commands;
 
 import co.com.sofka.domain.generic.Command;
-import generics.values.Fecha;
+import generics.values.DatosPersonales;
+import tripulacion.identities.IdCopiloto;
 import tripulacion.identities.IdPiloto;
 import tripulacion.identities.IdTripulacion;
 
-public class AgregarVueloPiloto extends Command {
+public class CrearTripulacion extends Command {
     private final IdTripulacion idTripulacion;
     private final IdPiloto idPiloto;
-    private final Fecha fecha;
+    private final DatosPersonales datosPersonales;
 
-    public AgregarVueloPiloto(IdTripulacion idTripulacion, IdPiloto idPiloto, Fecha fecha) {
+
+    public CrearTripulacion(IdTripulacion idTripulacion, IdPiloto idPiloto,DatosPersonales datosPersonales) {
         this.idTripulacion = idTripulacion;
         this.idPiloto = idPiloto;
-        this.fecha = fecha;
+        this.datosPersonales = datosPersonales;
+
+
     }
 
     public IdTripulacion getIdTripulacion() {
@@ -24,7 +28,7 @@ public class AgregarVueloPiloto extends Command {
         return idPiloto;
     }
 
-    public Fecha getFecha() {
-        return fecha;
+    public DatosPersonales getDatosPersonales() {
+        return datosPersonales;
     }
 }

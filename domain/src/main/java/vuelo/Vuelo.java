@@ -1,49 +1,52 @@
 package vuelo;
 
 import co.com.sofka.domain.generic.AggregateEvent;
+import co.com.sofka.domain.generic.DomainEvent;
 import generics.values.*;
+import pasajero.Pasajero;
 import pasajero.identities.IdPasajero;
-import pasajero.identities.IdReserva;
-import pasajero.values.Tarifa;
-import tripulacion.identities.IdCopiloto;
-import tripulacion.identities.IdPiloto;
-import tripulacion.identities.IdSobrecargo;
 import tripulacion.identities.IdTripulacion;
 import vuelo.entities.Avion;
 import vuelo.entities.Ruta;
+import vuelo.events.AvionAgregado;
+import vuelo.events.VueloCreado;
 import vuelo.identities.IdAvion;
-import vuelo.identities.IdRuta;
 import vuelo.identities.IdVuelo;
 import vuelo.values.Capacidad;
 import vuelo.values.Modelo;
-import vuelo.values.Ubicacion;
 
+import java.util.List;
 import java.util.Set;
-/*
+
 public class Vuelo extends AggregateEvent<IdVuelo> {
     protected IdTripulacion idTripulacion;
     protected Avion avion;
     protected Set<IdPasajero> idPasajeros;
     protected Ruta ruta;
 
-
-
-    public Vuelo(IdVuelo entityId, Origen origen, Destino destino, Llegada llegada, Salida salida) {
+    public Vuelo(IdVuelo entityId) {
         super(entityId);
-        appendChange(new vueloCreado(entityId, origen, destino,llegada, salida)).apply();
+    }
+
+    public Vuelo(IdVuelo entityId, Itinerario itinerario) {
+        super(entityId);
+        appendChange(new VueloCreado( itinerario)).apply();
         subscribe(new VueloEventChange(this));
     }
 
+    public static Vuelo from(IdVuelo idVuelo, List<DomainEvent> events){
+        var vuelo= new Vuelo(idVuelo);
+        events.forEach(vuelo::applyEvent);
+        return vuelo;
+    }
 
     public void agregarAvion(IdAvion idAvion, Modelo modelo, Capacidad capacidad){
-        appendChange(new AvionAgregado(idAvion,modelo,capacidad)).apply();
+        appendChange(new AvionAgregado(idAvion, modelo,capacidad )).apply();
     }
-    public void agregarPasajero(IdPasajero idPasajero,
-                                DatosPersonales datosPersonales,
-                                IdReserva idReserva,
-                                Tarifa tarifa)
+    /*
+    public void agregarPasajero(IdPasajero idPasajero)
     {
-        appendChange(new PasajeroAgregado(idPasajero,datosPersonales,idReserva,tarifa)).apply();
+        appendChange(new PasajeroAgregado(idPasajero)).apply();
     }
 
     public void eliminarPasajero(IdPasajero idPasajero) {
@@ -74,31 +77,20 @@ public class Vuelo extends AggregateEvent<IdVuelo> {
         appendChange(new LlegadaRutaCambiada(llegada)).apply();
     }
 
-    public void agregarTripulacion(IdPiloto idPiloto,DatosPersonales datosPersonales){
-        appendChange(new PilotoAgregadoDeVuelo(idPiloto,datosPersonales)).apply();
+    public void agregarTripulacion(IdPiloto idPiloto){
+        appendChange(new PilotoAgregadoDeVuelo(idPiloto)).apply();
 
     }
 
-    public void agregarTripulacion(IdCopiloto idCopiloto,DatosPersonales datosPersonales){
-        appendChange(new CopilotoAgregadoDeVuelo(idCopiloto,datosPersonales)).apply();
+    public void agregarTripulacion(IdCopiloto idCopiloto){
+        appendChange(new CopilotoAgregadoDeVuelo(idCopiloto)).apply();
 
     }
 
-    public void agregarTripulacion(IdSobrecargo idSobrecargo,DatosPersonales datosPersonales){
-        appendChange(new SobrecargoAgregadoDeVuelo(idSobrecargo,datosPersonales)).apply();
+    public void agregarTripulacion(IdSobrecargo idSobrecargo){
+        appendChange(new SobrecargoAgregadoDeVuelo(idSobrecargo)).apply();
     }
 
-    public void cambiarPiloto(IdPiloto idPilotoNuevo, DatosPersonales datosPersonalesNuevoPiloto){
-        agregarTripulacion(idPilotoNuevo,datosPersonalesNuevoPiloto);
-    }
-
-    public void cambiarCopiloto(IdCopiloto idCopilotoNuevo, DatosPersonales datosPersonalesNuevoCopiloto){
-        agregarTripulacion(idCopilotoNuevo,datosPersonalesNuevoCopiloto);
-    }
-
-    public void cambiarSobrecargo(IdSobrecargo idSobrecargoactual,IdSobrecargo idSobrecargoNuevo,DatosPersonales datosPersonalesSobrecargoNuevo){
-        appendChange(new SobrecargoCambiadoDeVuelo(idSobrecargoactual,idSobrecargoNuevo,datosPersonalesSobrecargoNuevo)).apply();
-    }
 
     public void elimnarSobrecargo(IdSobrecargo idSobrecargo){
         appendChange(new SobrecargoEliminadoDeVuelo(idSobrecargo)).apply();
@@ -108,7 +100,7 @@ public class Vuelo extends AggregateEvent<IdVuelo> {
         appendChange(new UbicacionAvionModificada(idRuta,ubicacion)).apply();
     }
 
-
+*/
 
 }
-*/
+
