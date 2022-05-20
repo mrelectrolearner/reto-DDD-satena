@@ -6,6 +6,8 @@ import tripulacion.entities.Piloto;
 import tripulacion.entities.Sobrecargo;
 import tripulacion.events.*;
 
+import java.util.HashMap;
+
 public class TripulacionEventChange extends EventChange {
     public TripulacionEventChange(Tripulacion tripulacion) {
         apply((TripulacionCreada event)->{
@@ -15,6 +17,7 @@ public class TripulacionEventChange extends EventChange {
             var datosCopiloto=event.getDatosPiloto();
             tripulacion.piloto=new Piloto(idPiloto,datosPiloto);
             tripulacion.copiloto=new Copiloto(idCopiloto,datosCopiloto);
+            tripulacion.sobrecargos=new HashMap<>();
 
         });
 

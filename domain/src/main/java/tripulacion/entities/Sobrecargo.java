@@ -15,6 +15,7 @@ public class Sobrecargo extends Entity<IdSobrecargo> {
     public Sobrecargo(IdSobrecargo entityId,DatosPersonales datosPersonales) {
         super(entityId);
         this.datosPersonales=datosPersonales;
+        this.calendarioVuelos=new HashMap<>();
     }
     public void agregarVuelo(Fecha fecha){
         Disponibilidad nodisponible =new Disponibilidad(Disponibilidad.EstadoTripulante.NODISPONIBLE);
