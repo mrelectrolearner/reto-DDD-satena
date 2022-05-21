@@ -69,10 +69,9 @@ class AgregarVueloCopilotoUseCaseTest {
         var correoCopiloto=new Correo("cop@gp.com");
         var datosPersonales=new DatosPersonales( nombre,telefono,correo);
         var tripulacionCreada=new TripulacionCreada(idPiloto,datosPersonales);
-        var idCopiloto=IdCopiloto.of("copi");
         var datosCopiloto=new DatosPersonales(nombreCopiloto,telefonoCopiloto,correoCopiloto);
         var copilotoAgregado=new CopilotoCambiado(datosCopiloto);
-        return List.of(tripulacionCreada);
+        return List.of(tripulacionCreada,copilotoAgregado);
     }
 
 }

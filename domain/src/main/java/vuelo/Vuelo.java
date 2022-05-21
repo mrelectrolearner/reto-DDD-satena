@@ -3,10 +3,10 @@ package vuelo;
 import co.com.sofka.domain.generic.AggregateEvent;
 import co.com.sofka.domain.generic.DomainEvent;
 import generics.values.*;
-import pasajero.Pasajero;
 import pasajero.identities.IdPasajero;
 import tripulacion.identities.IdTripulacion;
 import vuelo.entities.Avion;
+import vuelo.entities.Carga;
 import vuelo.entities.Ruta;
 import vuelo.events.AvionAgregado;
 import vuelo.events.VueloCreado;
@@ -23,6 +23,8 @@ public class Vuelo extends AggregateEvent<IdVuelo> {
     protected Avion avion;
     protected Set<IdPasajero> idPasajeros;
     protected Ruta ruta;
+
+    protected Carga carga;
 
     public Vuelo(IdVuelo entityId) {
         super(entityId);

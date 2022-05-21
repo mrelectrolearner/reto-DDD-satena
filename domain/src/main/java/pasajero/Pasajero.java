@@ -52,7 +52,7 @@ public class Pasajero extends AggregateEvent<IdPasajero> {
     public void checkIn(IdEquipaje idEquipaje, Peso peso, Volumen volumen, Tipo tipo,
                         Descripcion descripcion, NumeroAsiento numeroAsiento, IdAsiento idAsiento)
     {
-        appendChange(new Checked( idEquipaje,peso, volumen, tipo, descripcion,numeroAsiento, idAsiento)).apply();
+        appendChange(new Checked(this.entityId, idEquipaje,peso, volumen, tipo, descripcion,numeroAsiento, idAsiento)).apply();
     }
 
     public void generarTargetaDeEmbarque(IdVuelo idVuelo){

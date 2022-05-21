@@ -3,9 +3,11 @@ package pasajero.events;
 import co.com.sofka.domain.generic.DomainEvent;
 import pasajero.identities.IdAsiento;
 import pasajero.identities.IdEquipaje;
+import pasajero.identities.IdPasajero;
 import pasajero.values.*;
 
 public class Checked extends DomainEvent {
+    private final IdPasajero idPasajero;
     private final IdEquipaje idEquipaje;
     private final Peso peso;
     private final Volumen volumen;
@@ -13,8 +15,9 @@ public class Checked extends DomainEvent {
     private final Descripcion descripcion;
     private final NumeroAsiento numeroAsiento;
     private final IdAsiento idAsiento;
-    public Checked(IdEquipaje idEquipaje, Peso peso, Volumen volumen, Tipo tipo, Descripcion descripcion, NumeroAsiento asiento, IdAsiento idAsiento) {
+    public Checked(IdPasajero idPasajero, IdEquipaje idEquipaje, Peso peso, Volumen volumen, Tipo tipo, Descripcion descripcion, NumeroAsiento asiento, IdAsiento idAsiento) {
         super("pasajero.Checked");
+        this.idPasajero = idPasajero;
         this.volumen = volumen;
         this.tipo = tipo;
         this.descripcion = descripcion;
@@ -22,6 +25,10 @@ public class Checked extends DomainEvent {
         this.numeroAsiento=asiento;
         this.idAsiento = idAsiento;
         this.idEquipaje=idEquipaje;
+    }
+
+    public IdPasajero getIdPasajero() {
+        return idPasajero;
     }
 
     public IdEquipaje getIdEquipaje() {
