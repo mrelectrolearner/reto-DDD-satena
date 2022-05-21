@@ -4,18 +4,31 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="9a400ce3-671a-4b6e-83e0-2c3b85deec72" name="Changes" comment="ADD useCase y Entidad Carga: se agregaron los casos de uso AgregarVueloSobrecargoUseCase y se hicieron las correcciones necesarias para su implementacion en pasajeros. Tambien se agrego la entidad Carga al agregado vuelo.">
-      <change afterPath="$PROJECT_DIR$/bussiness/src/main/java/pasajero/usecase/TargetaDeEmbarqueGeneradaUseCase.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/bussiness/src/test/java/pasajero/usecase/TargetaDeEmbarqueGeneradaUseCaseTest.java" afterDir="false" />
+    <list default="true" id="9a400ce3-671a-4b6e-83e0-2c3b85deec72" name="Changes" comment="ADD useCase: se agregaron los casos de uso TargetaDeEmbarqueGeneradaUseCase y se hicieron las correcciones necesarias para su implementacion en pasajeros.">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bussiness/src/test/java/pasajero/usecase/CambiarAsientoUseCaseTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/bussiness/src/test/java/pasajero/usecase/CambiarAsientoUseCaseTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bussiness/src/test/java/pasajero/usecase/CheckInUseCaseTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/bussiness/src/test/java/pasajero/usecase/CheckInUseCaseTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bussiness/src/test/java/pasajero/usecase/ReservarVueloUseCaseTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/bussiness/src/test/java/pasajero/usecase/ReservarVueloUseCaseTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bussiness/src/test/java/tripulacion/usecase/AgregarVueloCopilotoUseCaseTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/bussiness/src/test/java/tripulacion/usecase/AgregarVueloCopilotoUseCaseTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/domain/src/main/java/pasajero/Pasajero.java" beforeDir="false" afterPath="$PROJECT_DIR$/domain/src/main/java/pasajero/Pasajero.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/domain/src/main/java/pasajero/PasajeroEventChange.java" beforeDir="false" afterPath="$PROJECT_DIR$/domain/src/main/java/pasajero/PasajeroEventChange.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/domain/src/main/java/pasajero/events/PasajeroCreado.java" beforeDir="false" afterPath="$PROJECT_DIR$/domain/src/main/java/pasajero/events/PasajeroCreado.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/domain/src/main/java/pasajero/events/TargetaDeEmbarqueGenerada.java" beforeDir="false" afterPath="$PROJECT_DIR$/domain/src/main/java/pasajero/events/TargetaDeEmbarqueGenerada.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/domain/src/main/java/generics/values/CodigoVuelo.java" beforeDir="false" afterPath="$PROJECT_DIR$/domain/src/main/java/generics/values/CodigoVuelo.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/domain/src/main/java/generics/values/Correo.java" beforeDir="false" afterPath="$PROJECT_DIR$/domain/src/main/java/generics/values/Correo.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/domain/src/main/java/generics/values/DatosPersonales.java" beforeDir="false" afterPath="$PROJECT_DIR$/domain/src/main/java/generics/values/DatosPersonales.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/domain/src/main/java/generics/values/Destino.java" beforeDir="false" afterPath="$PROJECT_DIR$/domain/src/main/java/generics/values/Destino.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/domain/src/main/java/generics/values/Fecha.java" beforeDir="false" afterPath="$PROJECT_DIR$/domain/src/main/java/generics/values/Fecha.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/domain/src/main/java/generics/values/Llegada.java" beforeDir="false" afterPath="$PROJECT_DIR$/domain/src/main/java/generics/values/Llegada.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/domain/src/main/java/generics/values/Nombre.java" beforeDir="false" afterPath="$PROJECT_DIR$/domain/src/main/java/generics/values/Nombre.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/domain/src/main/java/generics/values/Origen.java" beforeDir="false" afterPath="$PROJECT_DIR$/domain/src/main/java/generics/values/Origen.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/domain/src/main/java/generics/values/Salida.java" beforeDir="false" afterPath="$PROJECT_DIR$/domain/src/main/java/generics/values/Salida.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/domain/src/main/java/generics/values/Telefono.java" beforeDir="false" afterPath="$PROJECT_DIR$/domain/src/main/java/generics/values/Telefono.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/domain/src/main/java/pasajero/values/Check.java" beforeDir="false" afterPath="$PROJECT_DIR$/domain/src/main/java/pasajero/values/Check.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/domain/src/main/java/pasajero/values/Descripcion.java" beforeDir="false" afterPath="$PROJECT_DIR$/domain/src/main/java/pasajero/values/Descripcion.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/domain/src/main/java/pasajero/values/NumeroAsiento.java" beforeDir="false" afterPath="$PROJECT_DIR$/domain/src/main/java/pasajero/values/NumeroAsiento.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/domain/src/main/java/pasajero/values/NumeroTicket.java" beforeDir="false" afterPath="$PROJECT_DIR$/domain/src/main/java/pasajero/values/NumeroTicket.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/domain/src/main/java/pasajero/values/Peso.java" beforeDir="false" afterPath="$PROJECT_DIR$/domain/src/main/java/pasajero/values/Peso.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/domain/src/main/java/pasajero/values/TargetaDeEmbarque.java" beforeDir="false" afterPath="$PROJECT_DIR$/domain/src/main/java/pasajero/values/TargetaDeEmbarque.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/domain/src/main/java/pasajero/values/Tarifa.java" beforeDir="false" afterPath="$PROJECT_DIR$/domain/src/main/java/pasajero/values/Tarifa.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/domain/src/main/java/pasajero/values/Tipo.java" beforeDir="false" afterPath="$PROJECT_DIR$/domain/src/main/java/pasajero/values/Tipo.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/domain/src/main/java/pasajero/values/Volumen.java" beforeDir="false" afterPath="$PROJECT_DIR$/domain/src/main/java/pasajero/values/Volumen.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/domain/src/main/java/tripulacion/commands/AgregarSobrecargo.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/domain/src/main/java/tripulacion/commands/CambiarCopiloto.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/domain/src/main/java/vuelo/values/Capacidad.java" beforeDir="false" afterPath="$PROJECT_DIR$/domain/src/main/java/vuelo/values/Capacidad.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/domain/src/main/java/vuelo/values/Modelo.java" beforeDir="false" afterPath="$PROJECT_DIR$/domain/src/main/java/vuelo/values/Modelo.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -287,7 +300,14 @@
       <option name="project" value="LOCAL" />
       <updated>1653097227409</updated>
     </task>
-    <option name="localTasksCounter" value="18" />
+    <task id="LOCAL-00018" summary="ADD useCase: se agregaron los casos de uso TargetaDeEmbarqueGeneradaUseCase y se hicieron las correcciones necesarias para su implementacion en pasajeros.">
+      <created>1653101561147</created>
+      <option name="number" value="00018" />
+      <option name="presentableId" value="LOCAL-00018" />
+      <option name="project" value="LOCAL" />
+      <updated>1653101561147</updated>
+    </task>
+    <option name="localTasksCounter" value="19" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -317,14 +337,15 @@
     <MESSAGE value="ADD useCase: se agregan el caso de uso AgregarVueloCopilotoUseCase con su respectiva prueba" />
     <MESSAGE value="Actualizacion IdCopiloto: se agrego contructor y metodo &quot;of&quot;" />
     <MESSAGE value="ADD useCase y Entidad Carga: se agregaron los casos de uso AgregarVueloSobrecargoUseCase y se hicieron las correcciones necesarias para su implementacion en pasajeros. Tambien se agrego la entidad Carga al agregado vuelo." />
-    <option name="LAST_COMMIT_MESSAGE" value="ADD useCase y Entidad Carga: se agregaron los casos de uso AgregarVueloSobrecargoUseCase y se hicieron las correcciones necesarias para su implementacion en pasajeros. Tambien se agrego la entidad Carga al agregado vuelo." />
+    <MESSAGE value="ADD useCase: se agregaron los casos de uso TargetaDeEmbarqueGeneradaUseCase y se hicieron las correcciones necesarias para su implementacion en pasajeros." />
+    <option name="LAST_COMMIT_MESSAGE" value="ADD useCase: se agregaron los casos de uso TargetaDeEmbarqueGeneradaUseCase y se hicieron las correcciones necesarias para su implementacion en pasajeros." />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
       <breakpoints>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/bussiness/src/test/java/pasajero/usecase/TargetaDeEmbarqueGeneradaUseCaseTest.java</url>
-          <line>96</line>
+          <line>95</line>
           <option name="timeStamp" value="11" />
         </line-breakpoint>
       </breakpoints>
@@ -349,6 +370,6 @@
     <SUITE FILE_PATH="coverage/DDD_satena$tripulacion_usecase_in_bussiness.ic" NAME="tripulacion.usecase in bussiness Coverage Results" MODIFIED="1653095427070" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
       <FILTER>tripulacion.usecase.*</FILTER>
     </SUITE>
-    <SUITE FILE_PATH="coverage/DDD_satena$All_in_bussiness.ic" NAME="All in bussiness Coverage Results" MODIFIED="1653097082845" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
+    <SUITE FILE_PATH="coverage/DDD_satena$All_in_bussiness.ic" NAME="All in bussiness Coverage Results" MODIFIED="1653101509952" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
   </component>
 </project>

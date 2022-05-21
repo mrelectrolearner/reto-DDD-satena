@@ -2,13 +2,15 @@ package generics.values;
 
 import co.com.sofka.domain.generic.ValueObject;
 
+import java.util.Objects;
+
 public class DatosPersonales implements ValueObject<DatosPersonales.Pros> {
     private Nombre nombre;
     private Telefono telefono;
     private Correo correo;
 
     public DatosPersonales(Nombre nombre, Telefono telefono, Correo correo) {
-        this.nombre = nombre;
+        this.nombre = Objects.requireNonNull(nombre);
         this.telefono = telefono;
         this.correo = correo;
     }
