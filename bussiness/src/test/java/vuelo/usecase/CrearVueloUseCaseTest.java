@@ -6,6 +6,7 @@ import generics.values.*;
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
+import org.mockito.Mockito;
 import org.mockito.internal.matchers.Or;
 import pasajero.events.PasajeroCreado;
 import vuelo.commands.CrearVuelo;
@@ -47,6 +48,7 @@ class CrearVueloUseCaseTest {
         var vueloCreado =(VueloCreado)events.get(0);
         Assertions.assertEquals(idVuelo.toString(),vueloCreado.aggregateRootId());
         Assertions.assertEquals(itinerario,vueloCreado.getItinerario());
+
     }
 
 }
