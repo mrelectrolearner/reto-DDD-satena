@@ -4,11 +4,12 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="9a400ce3-671a-4b6e-83e0-2c3b85deec72" name="Changes" comment="ADD useCase: se agregan los casos de uso AgregarAvionUseCase,CambiarAsientoUseCase CrearTripulacionUseCase y ModificarPilotoUseCase con sus respectivas pruebas unitarias.">
+    <list default="true" id="9a400ce3-671a-4b6e-83e0-2c3b85deec72" name="Changes" comment="ADD useCase: se agregan el caso de uso AgregarVueloPilotoUseCase con su respectiva prueba">
       <change afterPath="$PROJECT_DIR$/bussiness/src/main/java/tripulacion/usecase/AgregarVueloCopilotoUseCase.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/bussiness/src/main/java/tripulacion/usecase/AgregarVueloPilotoUseCase.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/bussiness/src/test/java/tripulacion/usecase/AgregarVueloPilotoUseCaseTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bussiness/src/test/java/tripulacion/usecase/AgregarVueloCopilotoUseCaseTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bussiness/src/test/java/vuelo/usecase/AgregarAvionUseCaseTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/bussiness/src/test/java/vuelo/usecase/AgregarAvionUseCaseTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/domain/src/main/java/tripulacion/identities/IdCopiloto.java" beforeDir="false" afterPath="$PROJECT_DIR$/domain/src/main/java/tripulacion/identities/IdCopiloto.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -18,8 +19,8 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="JUnit5 Test Class" />
         <option value="Class" />
+        <option value="JUnit5 Test Class" />
       </list>
     </option>
   </component>
@@ -69,6 +70,22 @@
     </key>
   </component>
   <component name="RunManager" selected="JUnit.All in bussiness">
+    <configuration name="AgregarVueloCopilotoUseCaseTest.agregarVueloCopilotoUseCase" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="bussiness" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="tripulacion.usecase.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="tripulacion.usecase" />
+      <option name="MAIN_CLASS_NAME" value="tripulacion.usecase.AgregarVueloCopilotoUseCaseTest" />
+      <option name="METHOD_NAME" value="agregarVueloCopilotoUseCase" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="AgregarVueloPilotoUseCaseTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="bussiness" />
       <extension name="coverage">
@@ -80,22 +97,6 @@
       <option name="PACKAGE_NAME" value="tripulacion.usecase" />
       <option name="MAIN_CLASS_NAME" value="tripulacion.usecase.AgregarVueloPilotoUseCaseTest" />
       <option name="TEST_OBJECT" value="class" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="AgregarVueloPilotoUseCaseTest.agregarVueloPilotoUseCaseHappyTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="bussiness" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="tripulacion.usecase.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="tripulacion.usecase" />
-      <option name="MAIN_CLASS_NAME" value="tripulacion.usecase.AgregarVueloPilotoUseCaseTest" />
-      <option name="METHOD_NAME" value="agregarVueloPilotoUseCaseHappyTest" />
-      <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -139,10 +140,10 @@
     <recent_temporary>
       <list>
         <item itemvalue="JUnit.All in bussiness" />
+        <item itemvalue="JUnit.AgregarVueloCopilotoUseCaseTest.agregarVueloCopilotoUseCase" />
         <item itemvalue="JUnit.pasajero.usecase in bussiness" />
         <item itemvalue="JUnit.tripulacion.usecase in bussiness" />
         <item itemvalue="JUnit.AgregarVueloPilotoUseCaseTest" />
-        <item itemvalue="JUnit.AgregarVueloPilotoUseCaseTest.agregarVueloPilotoUseCaseHappyTest" />
       </list>
     </recent_temporary>
   </component>
@@ -246,7 +247,14 @@
       <option name="project" value="LOCAL" />
       <updated>1653088875532</updated>
     </task>
-    <option name="localTasksCounter" value="14" />
+    <task id="LOCAL-00014" summary="ADD useCase: se agregan el caso de uso AgregarVueloPilotoUseCase con su respectiva prueba">
+      <created>1653092588977</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1653092588977</updated>
+    </task>
+    <option name="localTasksCounter" value="15" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -272,7 +280,8 @@
     <MESSAGE value="ADD CodigoVuelo: se agrego el objeto de valor CodigoVuelo a Tripulacion" />
     <MESSAGE value="ADD modulo business: se crea el modulo business y se agregan los casos de uso CrearPasajeroUseCase y ReservarVueloUseCase con sus respectivas pruebas unitarias." />
     <MESSAGE value="ADD useCase: se agregan los casos de uso AgregarAvionUseCase,CambiarAsientoUseCase CrearTripulacionUseCase y ModificarPilotoUseCase con sus respectivas pruebas unitarias." />
-    <option name="LAST_COMMIT_MESSAGE" value="ADD useCase: se agregan los casos de uso AgregarAvionUseCase,CambiarAsientoUseCase CrearTripulacionUseCase y ModificarPilotoUseCase con sus respectivas pruebas unitarias." />
+    <MESSAGE value="ADD useCase: se agregan el caso de uso AgregarVueloPilotoUseCase con su respectiva prueba" />
+    <option name="LAST_COMMIT_MESSAGE" value="ADD useCase: se agregan el caso de uso AgregarVueloPilotoUseCase con su respectiva prueba" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -304,6 +313,6 @@
     <SUITE FILE_PATH="coverage/DDD_satena$tripulacion_usecase_in_bussiness.ic" NAME="tripulacion.usecase in bussiness Coverage Results" MODIFIED="1653092287790" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
       <FILTER>tripulacion.usecase.*</FILTER>
     </SUITE>
-    <SUITE FILE_PATH="coverage/DDD_satena$All_in_bussiness.ic" NAME="All in bussiness Coverage Results" MODIFIED="1653092443376" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
+    <SUITE FILE_PATH="coverage/DDD_satena$All_in_bussiness.ic" NAME="All in bussiness Coverage Results" MODIFIED="1653093282068" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
   </component>
 </project>
