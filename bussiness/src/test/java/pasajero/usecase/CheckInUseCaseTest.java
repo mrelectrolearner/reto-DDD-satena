@@ -14,7 +14,6 @@ import org.junit.jupiter.api.extension.ExtendWith;
 import org.mockito.InjectMocks;
 import org.mockito.Mock;
 import org.mockito.junit.jupiter.MockitoExtension;
-import pasajero.commands.CheckIn;
 import pasajero.events.Checked;
 import pasajero.events.PasajeroCreado;
 import pasajero.identities.IdAsiento;
@@ -24,7 +23,6 @@ import pasajero.values.*;
 
 import java.util.List;
 
-import static org.junit.jupiter.api.Assertions.*;
 import static org.mockito.Mockito.verify;
 import static org.mockito.Mockito.when;
 
@@ -70,7 +68,7 @@ class CheckInUseCaseTest {
         Correo correo=new Correo("qq@g.com");
         DatosPersonales datosPersonales=new DatosPersonales(nombre,telefono,correo);
         var pasajeroCreado =new PasajeroCreado(datosPersonales);
-        pasajeroCreado.setAggregateName("pasajero");
+        pasajeroCreado.setAggregateRootId("xx");
         return List.of(pasajeroCreado);
     }
 

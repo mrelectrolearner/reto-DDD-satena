@@ -71,6 +71,8 @@ class AgregarVueloCopilotoUseCaseTest {
         var tripulacionCreada=new TripulacionCreada(idPiloto,datosPersonales);
         var datosCopiloto=new DatosPersonales(nombreCopiloto,telefonoCopiloto,correoCopiloto);
         var copilotoAgregado=new CopilotoCambiado(datosCopiloto);
+        tripulacionCreada.setAggregateRootId("vu");
+        copilotoAgregado.setAggregateRootId("piv");
         return List.of(tripulacionCreada,copilotoAgregado);
     }
 

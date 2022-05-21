@@ -48,7 +48,7 @@ public class PasajeroEventChange extends EventChange {
             var nombre=event.getNombre();
             var idVuelo= event.getVuelo();
             var numeroTicket=event.getNumeroTicket();
-            var numeroAsiento =event.getNumero();
+            var numeroAsiento =event.getNumeroAsiento();
             var itinerario= event.getItinerario();
             pasajero.targetaDeEmbarque=new TargetaDeEmbarque(nombre,idVuelo,itinerario,numeroTicket, numeroAsiento);
         });

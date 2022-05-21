@@ -4,24 +4,26 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="9a400ce3-671a-4b6e-83e0-2c3b85deec72" name="Changes" comment="Actualizacion IdCopiloto: se agrego contructor y metodo &quot;of&quot;">
-      <change afterPath="$PROJECT_DIR$/bussiness/src/main/java/pasajero/usecase/CheckInUseCase.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/bussiness/src/main/java/tripulacion/usecase/AgregarVueloSobrecargoUseCase.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/bussiness/src/test/java/pasajero/usecase/CheckInUseCaseTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/bussiness/src/test/java/tripulacion/usecase/AgregarVueloSobrecargoUseCaseTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/domain/src/main/java/vuelo/entities/Carga.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/domain/src/main/java/vuelo/identities/IdCarga.java" afterDir="false" />
+    <list default="true" id="9a400ce3-671a-4b6e-83e0-2c3b85deec72" name="Changes" comment="ADD useCase y Entidad Carga: se agregaron los casos de uso AgregarVueloSobrecargoUseCase y se hicieron las correcciones necesarias para su implementacion en pasajeros. Tambien se agrego la entidad Carga al agregado vuelo.">
+      <change afterPath="$PROJECT_DIR$/bussiness/src/main/java/pasajero/usecase/TargetaDeEmbarqueGeneradaUseCase.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bussiness/src/test/java/pasajero/usecase/TargetaDeEmbarqueGeneradaUseCaseTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bussiness/src/test/java/pasajero/usecase/CambiarAsientoUseCaseTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/bussiness/src/test/java/pasajero/usecase/CambiarAsientoUseCaseTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bussiness/src/test/java/pasajero/usecase/CheckInUseCaseTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/bussiness/src/test/java/pasajero/usecase/CheckInUseCaseTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bussiness/src/test/java/pasajero/usecase/ReservarVueloUseCaseTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/bussiness/src/test/java/pasajero/usecase/ReservarVueloUseCaseTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/bussiness/src/test/java/tripulacion/usecase/AgregarVueloCopilotoUseCaseTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/bussiness/src/test/java/tripulacion/usecase/AgregarVueloCopilotoUseCaseTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/domain/src/main/java/pasajero/Pasajero.java" beforeDir="false" afterPath="$PROJECT_DIR$/domain/src/main/java/pasajero/Pasajero.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/domain/src/main/java/pasajero/events/Checked.java" beforeDir="false" afterPath="$PROJECT_DIR$/domain/src/main/java/pasajero/events/Checked.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/domain/src/main/java/tripulacion/identities/IdSobrecargo.java" beforeDir="false" afterPath="$PROJECT_DIR$/domain/src/main/java/tripulacion/identities/IdSobrecargo.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/domain/src/main/java/vuelo/Vuelo.java" beforeDir="false" afterPath="$PROJECT_DIR$/domain/src/main/java/vuelo/Vuelo.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/domain/src/main/java/pasajero/PasajeroEventChange.java" beforeDir="false" afterPath="$PROJECT_DIR$/domain/src/main/java/pasajero/PasajeroEventChange.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/domain/src/main/java/pasajero/events/PasajeroCreado.java" beforeDir="false" afterPath="$PROJECT_DIR$/domain/src/main/java/pasajero/events/PasajeroCreado.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/domain/src/main/java/pasajero/events/TargetaDeEmbarqueGenerada.java" beforeDir="false" afterPath="$PROJECT_DIR$/domain/src/main/java/pasajero/events/TargetaDeEmbarqueGenerada.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="CoverageOptionsProvider">
+    <option name="myAddOrReplace" value="1" />
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -85,6 +87,22 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="CambiarAsientoUseCaseTest.cambiarAsientoUseCaseHappytest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="bussiness" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="pasajero.usecase.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="pasajero.usecase" />
+      <option name="MAIN_CLASS_NAME" value="pasajero.usecase.CambiarAsientoUseCaseTest" />
+      <option name="METHOD_NAME" value="cambiarAsientoUseCaseHappytest" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="CheckInUseCaseTest.CheckInUseCaseTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="bussiness" />
       <extension name="coverage">
@@ -96,6 +114,22 @@
       <option name="PACKAGE_NAME" value="pasajero.usecase" />
       <option name="MAIN_CLASS_NAME" value="pasajero.usecase.CheckInUseCaseTest" />
       <option name="METHOD_NAME" value="CheckInUseCaseTest" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="TargetaDeEmbarqueGeneradaUseCaseTest.targetaDeEmbarqueGeneradaUseCaseHappyTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="bussiness" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="pasajero.usecase.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="pasajero.usecase" />
+      <option name="MAIN_CLASS_NAME" value="pasajero.usecase.TargetaDeEmbarqueGeneradaUseCaseTest" />
+      <option name="METHOD_NAME" value="targetaDeEmbarqueGeneradaUseCaseHappyTest" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -115,41 +149,13 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="tripulacion.usecase in bussiness" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="bussiness" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="tripulacion.usecase.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="tripulacion.usecase" />
-      <option name="TEST_OBJECT" value="package" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="vuelo.usecase in bussiness" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="bussiness" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="vuelo.usecase.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="vuelo.usecase" />
-      <option name="TEST_OBJECT" value="package" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <recent_temporary>
       <list>
         <item itemvalue="JUnit.All in bussiness" />
+        <item itemvalue="JUnit.TargetaDeEmbarqueGeneradaUseCaseTest.targetaDeEmbarqueGeneradaUseCaseHappyTest" />
         <item itemvalue="JUnit.pasajero.usecase in bussiness" />
+        <item itemvalue="JUnit.CambiarAsientoUseCaseTest.cambiarAsientoUseCaseHappytest" />
         <item itemvalue="JUnit.CheckInUseCaseTest.CheckInUseCaseTest" />
-        <item itemvalue="JUnit.vuelo.usecase in bussiness" />
-        <item itemvalue="JUnit.tripulacion.usecase in bussiness" />
       </list>
     </recent_temporary>
   </component>
@@ -274,7 +280,14 @@
       <option name="project" value="LOCAL" />
       <updated>1653093810952</updated>
     </task>
-    <option name="localTasksCounter" value="17" />
+    <task id="LOCAL-00017" summary="ADD useCase y Entidad Carga: se agregaron los casos de uso AgregarVueloSobrecargoUseCase y se hicieron las correcciones necesarias para su implementacion en pasajeros. Tambien se agrego la entidad Carga al agregado vuelo.">
+      <created>1653097227409</created>
+      <option name="number" value="00017" />
+      <option name="presentableId" value="LOCAL-00017" />
+      <option name="project" value="LOCAL" />
+      <updated>1653097227409</updated>
+    </task>
+    <option name="localTasksCounter" value="18" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -303,21 +316,22 @@
     <MESSAGE value="ADD useCase: se agregan el caso de uso AgregarVueloPilotoUseCase con su respectiva prueba" />
     <MESSAGE value="ADD useCase: se agregan el caso de uso AgregarVueloCopilotoUseCase con su respectiva prueba" />
     <MESSAGE value="Actualizacion IdCopiloto: se agrego contructor y metodo &quot;of&quot;" />
-    <option name="LAST_COMMIT_MESSAGE" value="Actualizacion IdCopiloto: se agrego contructor y metodo &quot;of&quot;" />
+    <MESSAGE value="ADD useCase y Entidad Carga: se agregaron los casos de uso AgregarVueloSobrecargoUseCase y se hicieron las correcciones necesarias para su implementacion en pasajeros. Tambien se agrego la entidad Carga al agregado vuelo." />
+    <option name="LAST_COMMIT_MESSAGE" value="ADD useCase y Entidad Carga: se agregaron los casos de uso AgregarVueloSobrecargoUseCase y se hicieron las correcciones necesarias para su implementacion en pasajeros. Tambien se agrego la entidad Carga al agregado vuelo." />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
       <breakpoints>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/domain/src/main/java/pasajero/PasajeroEventChange.java</url>
-          <line>56</line>
-          <option name="timeStamp" value="2" />
+          <url>file://$PROJECT_DIR$/bussiness/src/test/java/pasajero/usecase/TargetaDeEmbarqueGeneradaUseCaseTest.java</url>
+          <line>96</line>
+          <option name="timeStamp" value="11" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
-    <SUITE FILE_PATH="coverage/DDD_satena$pasajero_usecase_in_bussiness.ic" NAME="pasajero.usecase in bussiness Coverage Results" MODIFIED="1653095398862" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
+    <SUITE FILE_PATH="coverage/DDD_satena$pasajero_usecase_in_bussiness.ic" NAME="pasajero.usecase in bussiness Coverage Results" MODIFIED="1653099540136" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
       <FILTER>pasajero.usecase.*</FILTER>
     </SUITE>
     <SUITE FILE_PATH="coverage/DDD_satena$AgregarVueloPilotoUseCaseTest.ic" NAME="AgregarVueloPilotoUseCaseTest Coverage Results" MODIFIED="1653092257643" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
@@ -335,6 +349,6 @@
     <SUITE FILE_PATH="coverage/DDD_satena$tripulacion_usecase_in_bussiness.ic" NAME="tripulacion.usecase in bussiness Coverage Results" MODIFIED="1653095427070" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
       <FILTER>tripulacion.usecase.*</FILTER>
     </SUITE>
-    <SUITE FILE_PATH="coverage/DDD_satena$All_in_bussiness.ic" NAME="All in bussiness Coverage Results" MODIFIED="1653095452721" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
+    <SUITE FILE_PATH="coverage/DDD_satena$All_in_bussiness.ic" NAME="All in bussiness Coverage Results" MODIFIED="1653097082845" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
   </component>
 </project>

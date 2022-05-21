@@ -59,7 +59,7 @@ public class Pasajero extends AggregateEvent<IdPasajero> {
         Nombre nombre=datosPersonales.value().nombre();
         Itinerario itinerario=this.reservacion.itinerario();
         NumeroAsiento numeroAsiento=this.asiento.getNumero();
-        appendChange(new TargetaDeEmbarqueGenerada(nombre, idVuelo,
+        appendChange(new TargetaDeEmbarqueGenerada(this.entityId, nombre, idVuelo,
                 itinerario,numeroTicket,numeroAsiento)).apply();
 
     }
