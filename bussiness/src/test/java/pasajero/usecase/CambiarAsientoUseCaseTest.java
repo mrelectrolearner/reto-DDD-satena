@@ -62,7 +62,7 @@ class CambiarAsientoUseCaseTest {
         Correo correo=new Correo("qq@g.com");
         DatosPersonales datosPersonales=new DatosPersonales(nombre,telefono,correo);
         var pasajeroCreado =new PasajeroCreado(datosPersonales);
-        pasajeroCreado.setAggregateName("pasajero");
+        pasajeroCreado.setAggregateRootId("xx");
         return List.of(pasajeroCreado);
     }
 

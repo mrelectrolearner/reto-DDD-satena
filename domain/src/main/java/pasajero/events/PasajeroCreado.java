@@ -6,6 +6,7 @@ import pasajero.identities.IdPasajero;
 
 public class PasajeroCreado extends DomainEvent {
 
+
     private final DatosPersonales datosPersonales;
     public PasajeroCreado(DatosPersonales datosPersonales) {
         super("pasajero.PasajeroCreado");

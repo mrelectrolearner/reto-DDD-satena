@@ -12,7 +12,6 @@ import org.mockito.InjectMocks;
 import org.mockito.Mock;
 import org.mockito.Mockito;
 import org.mockito.junit.jupiter.MockitoExtension;
-import pasajero.Pasajero;
 import pasajero.commands.ReservarVuelo;
 import pasajero.events.PasajeroCreado;
 import pasajero.events.VueloReservado;
@@ -23,7 +22,6 @@ import pasajero.values.Tarifa;
 import java.time.LocalDate;
 import java.util.List;
 
-import static org.junit.jupiter.api.Assertions.*;
 import static org.mockito.Mockito.when;
 
 @ExtendWith(MockitoExtension.class)
@@ -73,7 +71,7 @@ class ReservarVueloUseCaseTest {
         Correo correo=new Correo("qq@g.com");
         DatosPersonales datosPersonales=new DatosPersonales(nombre,telefono,correo);
         var pasajeroCreado =new PasajeroCreado(datosPersonales);
-        pasajeroCreado.setAggregateName("pasajero");
+        pasajeroCreado.setAggregateRootId("xix");
         return List.of(pasajeroCreado);
     }
 

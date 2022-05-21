@@ -9,6 +9,7 @@ import org.junit.jupiter.api.Test;
 import org.junit.jupiter.api.extension.ExtendWith;
 import org.mockito.InjectMocks;
 import org.mockito.Mock;
+import org.mockito.Mockito;
 import org.mockito.junit.jupiter.MockitoExtension;
 import vuelo.commands.AgregarAvion;
 import vuelo.events.AvionAgregado;
@@ -51,6 +52,7 @@ class AgregarAvionUseCaseTest {
         Assertions.assertEquals(idAvion,avionAgregado.getIdAvion());
         Assertions.assertEquals(capacidad,avionAgregado.getCapacidad());
         Assertions.assertEquals(modelo,avionAgregado.getModelo());
+        Mockito.verify(repository).getEventsBy("xx");
     }
 
     private List<DomainEvent> history() {

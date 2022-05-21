@@ -52,14 +52,14 @@ public class Pasajero extends AggregateEvent<IdPasajero> {
     public void checkIn(IdEquipaje idEquipaje, Peso peso, Volumen volumen, Tipo tipo,
                         Descripcion descripcion, NumeroAsiento numeroAsiento, IdAsiento idAsiento)
     {
-        appendChange(new Checked( idEquipaje,peso, volumen, tipo, descripcion,numeroAsiento, idAsiento)).apply();
+        appendChange(new Checked(this.entityId, idEquipaje,peso, volumen, tipo, descripcion,numeroAsiento, idAsiento)).apply();
     }
 
     public void generarTargetaDeEmbarque(IdVuelo idVuelo){
         Nombre nombre=datosPersonales.value().nombre();
         Itinerario itinerario=this.reservacion.itinerario();
         NumeroAsiento numeroAsiento=this.asiento.getNumero();
-        appendChange(new TargetaDeEmbarqueGenerada(nombre, idVuelo,
+        appendChange(new TargetaDeEmbarqueGenerada(this.entityId, nombre, idVuelo,
                 itinerario,numeroTicket,numeroAsiento)).apply();
 
     }

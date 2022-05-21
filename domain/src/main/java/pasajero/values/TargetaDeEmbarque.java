@@ -5,6 +5,8 @@ import generics.values.Itinerario;
 import generics.values.Nombre;
 import vuelo.identities.IdVuelo;
 
+import java.util.Objects;
+
 public class TargetaDeEmbarque implements ValueObject<TargetaDeEmbarque.Pros> {
     private Nombre nombrePasajero;
     private IdVuelo idVuelo;
@@ -13,11 +15,11 @@ public class TargetaDeEmbarque implements ValueObject<TargetaDeEmbarque.Pros> {
     private NumeroAsiento numeroAsiento;
 
     public TargetaDeEmbarque(Nombre nombrePasajero, IdVuelo idVuelo, Itinerario itinerario, NumeroTicket numeroTicket, NumeroAsiento numeroAsiento) {
-        this.nombrePasajero = nombrePasajero;
-        this.idVuelo = idVuelo;
-        this.itinerario = itinerario;
-        this.numeroTicket = numeroTicket;
-        this.numeroAsiento = numeroAsiento;
+        this.nombrePasajero = Objects.requireNonNull(nombrePasajero);
+        this.idVuelo =Objects.requireNonNull(idVuelo);
+        this.itinerario =Objects.requireNonNull(itinerario);
+        this.numeroTicket =numeroTicket;
+        this.numeroAsiento =Objects.requireNonNull(numeroAsiento);
     }
 
     @Override

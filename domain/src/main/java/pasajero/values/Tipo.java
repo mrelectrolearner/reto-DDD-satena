@@ -2,11 +2,13 @@ package pasajero.values;
 
 import co.com.sofka.domain.generic.ValueObject;
 
+import java.util.Objects;
+
 public class Tipo implements ValueObject<String> {
     private String valor;
 
     public Tipo(String valor) {
-        this.valor = valor;
+        this.valor = Objects.requireNonNull(valor);
     }
 
     @Override
